@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box-todo {
+      height: 97svh;
+      width: 100%;
+
+      border: 2px solid red;
+      position: relative;
+    }
+
+    .box-todo .header-div {
+      border: 2px solid green;
+      padding-left: 10px;
+    }
+
+    .box-todo .input-wrapper {
+      border: 2px solid purple;
+      position: absolute;
+      width: 100%;
+      height: 10vh;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      gap: 40px;
+    }
+
+    .box-todo .input-wrapper input {
+      padding: 8px;
+      width: 50vh;
+      font-size: 17px;
+    }
+
+    .box-todo .input-wrapper button {
+      padding: 6px;
+      width: 20vh;
+    }
+  </style>
+  <body>
+    <div class="box-todo">
+      <div class="header-div">
+        <h3 class="header">Todo list</h3>
+      </div>
+      <div class="main-div">
+        <div class="content">
+          <h3 id="text"></h3>
+        </div>
+        <div class="input-wrapper">
+          <input id="inputText" type="text" name="input" value="Enter a todo" />
+          <button onclick="submit()">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function getContent() {
+        var inputValue = document.getElementById("inputText").value;
+        var content = document.getElementById("text");
+        inputValue.innerHTML = content;
+      }
+      getContent();
+    </script>
+  </body>
+</html>

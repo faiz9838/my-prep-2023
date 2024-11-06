@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>Multiple Cards with Modals</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 1</h5>
+              <button
+                type="button"
+                class="btn "
+                data-toggle="modal"
+                data-target="#modal1"
+              >
+              <div class="card">
+                <div class="logo">
+                  <i class="bi bi-credit-card" style="color: #04ef04;"></i>
+                </div>
+                <div class="content-wrapper">
+                  <h2 id="span-2">Flexible to pay.</h2>
+                  <h2 class="content-header">Plus instant savings and No cost EMI.</h2>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Card 2</h5>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#modal2"
+              >
+                Open Modal
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more cards as needed -->
+      </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="modal1"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label">Modal 1</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Modal 1 content goes here -->
+            Content for Modal 1
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="modal2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label">Modal 2</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Modal 2 content goes here -->
+            Content for Modal 2
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

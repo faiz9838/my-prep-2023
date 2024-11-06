@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: 100svh;
+      }
+
+      li {
+        display: inline;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul id="image">
+        <li>
+          <img
+            width="100px"
+            src="compare_iphone_14__ct4sjk962pea_large_2x.png"
+            alt=""
+            id="iphone14"
+          />
+        </li>
+        <li>
+          <img
+            width="100px"
+            src="compare_iphone_15_pro__c344odaqs5qq_large_2x.png"
+            alt=""
+            id="iphone15pro"
+          />
+        </li>
+      </ul>
+    </div>
+
+    <script>
+      //   document.getElementById("image").addEventListener(
+      //     "click",
+      //     function (e) {
+      //       console.log("Clicked inside the ul ");
+      //     },
+      //     false
+      //   );
+
+      //   document.getElementById("iphone14").addEventListener(
+      //     "click",
+      //     function (e) {
+      //       e.stopPropagation();
+      //       console.log("Clicked inside the iphone14 ");
+      //     },
+      //     false
+      //   );
+
+      //   document.getElementById("iphone15pro").addEventListener(
+      //     "click",
+      //     function (e) {
+      //       e.stopPropagation();
+      //       e.preventDefault();
+      //       console.log("Clicked inside the iphone15pro ");
+      //     },
+      //     false
+      //   );
+
+      document.querySelector("#image").addEventListener("click", function (e) {
+        if (e.target.tagName === "IMG") {
+          let removeIt = e.target.parentNode;
+
+          removeIt.remove();
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
+
+    <style>
+      body {
+        position: relative;
+        padding-top: 56px; /* Adjust according to your navbar height */
+      }
+
+      .gallery {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        min-width: 200%;
+        left: -340px;
+        height: 80vh;
+        z-index: 1;
+        background: #eee;
+        overflow: hidden;
+        border: 2px solid rgb(0, 255, 30);
+      }
+
+      .gallery .card-wrapper {
+        position: absolute;
+      
+        width: 20%;
+        height: 90%;
+        top: 35%;
+        left: 0;
+        bottom: 0;
+        margin: 40px;
+        transition: 0.5s ease-out;
+      }
+
+      .gallery .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        max-width: 15rem;
+        margin-left: 5%;
+        height: 60%;
+        background: #ddd;
+        user-select: none;
+        transition: 0.5s ease-out;
+      }
+
+      .gallery .card .bottom-body{
+        position: absolute;
+        bottom: 0;
+        border: 2px solid red;
+        height: 8vh;
+        width: 100%;
+      }
+
+      .gallery [data-position="0"] .card {
+        background: #aaa;
+      }
+
+      .gallery [data-position="1"] .card {
+        transform: scale3d(0.9, 0.9, 0.9);
+      }
+
+      .gallery [data-position="2"] .card {
+        transform: scale3d(0.8, 0.8, 0.8);
+      }
+
+      .gallery [data-position="3"] .card {
+        transform: scale3d(0.7, 0.7, 0.7);
+      }
+
+      .prev-button,
+      .next-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: #fff;
+        color: #333;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        cursor: pointer;
+        left: 10px;
+        top: calc(50% - 15px);
+        user-select: none;
+      }
+
+      .next-button {
+        left: auto;
+        right: 10px;
+        top: calc(50% - 15px);
+      }
+      .slider-container {
+  position: relative;
+  width: 46%;
+  border: 2px solid red;
+  overflow: hidden;
+  height: 100vh; /* Adjust the height as needed */
+  background-color: lightgray; /* Initial background color */
+}
+
+      @media (min-width: 768px) {
+        body {
+          padding-top: 0;
+        }
+      }
+
+      .navbar-nav a {
+        color: white;
+      }
+
+      .navbar-nav a:hover {
+        background-color: #555;
+      }
+
+      @media (max-width: 767px) {
+        .navbar-nav {
+          background-color: #333; /* Background color for mobile navbar */
+        }
+
+        .navbar-nav .nav-item {
+          border-bottom: 1px solid #555; /* Border between mobile navbar items */
+        }
+      }
+    </style>
+  </head>
+  <body>
+   <!-- Add the parent div in your HTML -->
+<div class="slider-container">
+  <div class="gallery col-5">
+  
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="bottom-body">
+          <h5>Click me</h5>
+        </div>
+      </div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">C</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">D</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">E</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div>
+    <div class="card-wrapper">
+      <div class="card">F</div>
+    </div
+    <!-- Add this button in your HTML -->
+    <button id="toggleButton">Play</button>
+  </div>
+</div>
+  
+
+
+ <script>
+  const gallery = document.querySelector('.gallery');
+const cardWrappers = document.querySelectorAll('.card-wrapper');
+const toggleButton = document.getElementById('toggleButton');
+
+let selectedIndex = 0; // Start from the first card
+let slideInterval;
+let isAutoSlideRunning = false;
+
+// Move card position depend on selected index
+const applyCardPositions = () => {
+  cardWrappers.forEach((cardWrapper, index) => {
+    const workingIndex = selectedIndex <= 2
+      ? index + (2 - selectedIndex)
+      : index - selectedIndex + 2;
+    cardWrapper.dataset.index = index;
+    cardWrapper.dataset.position = Math.abs(index - selectedIndex);
+    cardWrapper.style.left = `${workingIndex * 20}%`;
+  });
+};
+
+applyCardPositions();
+
+// Helpers
+const decreaseSelectedIndex = () => {
+  if (selectedIndex > 0) {
+    selectedIndex -= 1;
+    applyCardPositions();
+  } else {
+    selectedIndex = cardWrappers.length - 1; // Loop to the last card
+    applyCardPositions();
+  }
+};
+
+const increaseSelectedIndex = () => {
+  if (selectedIndex < cardWrappers.length - 1) {
+    selectedIndex += 1;
+    applyCardPositions();
+  } else {
+    selectedIndex = 0; // Loop to the first card
+    applyCardPositions();
+  }
+};
+
+// Automatic slide
+const startAutoSlide = () => {
+  slideInterval = setInterval(() => {
+    increaseSelectedIndex();
+    updateBackgroundColor();
+  }, 2000); // Adjust the interval as needed (e.g., 2000 milliseconds = 2 seconds)
+  toggleButton.textContent = 'Pause';
+  isAutoSlideRunning = true;
+};
+
+const stopAutoSlide = () => {
+  clearInterval(slideInterval);
+  toggleButton.textContent = 'Play';
+  isAutoSlideRunning = false;
+};
+
+// Toggle button event
+toggleButton.addEventListener('click', () => {
+  if (isAutoSlideRunning) {
+    stopAutoSlide();
+  } else {
+    startAutoSlide();
+  }
+});
+
+// Update background color function
+const updateBackgroundColor = () => {
+  // Generate a random color
+  const randomColor = getRandomColor();
+  gallery.style.backgroundColor = randomColor;
+};
+
+// Function to generate a random color
+const getRandomColor = () => {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+// Swipe events
+let startPos = [0, 0];
+
+gallery.addEventListener('pointerdown', (e) => {
+  stopAutoSlide();
+  startPos = [e.clientX, e.clientY];
+});
+
+gallery.addEventListener('pointerup', (e) => {
+  const endPos = [e.clientX, e.clientY];
+
+  // Threshold
+  if (Math.abs(endPos[0] - startPos[0]) < 50) {
+    return;
+  }
+
+  if (endPos[0] < startPos[0]) {
+    increaseSelectedIndex();
+  }
+
+  if (endPos[0] > startPos[0]) {
+    decreaseSelectedIndex();
+  }
+
+  startAutoSlide(); // Start automatic slide after user interaction
+});
+
+// Start automatic slide on page load
+startAutoSlide();
+
+ </script>
+ <!-- <script>
+  const gallery = document.querySelector('.gallery');
+const cardWrappers = document.querySelectorAll('.card-wrapper');
+
+let selectedIndex = 0; // Start from the first card
+let slideInterval;
+
+// Move card position depend on selected index
+const applyCardPositions = () => {
+  cardWrappers.forEach((cardWrapper, index) => {
+    const workingIndex = selectedIndex <= 2
+      ? index + (2 - selectedIndex)
+      : index - selectedIndex + 2;
+    cardWrapper.dataset.index = index;
+    cardWrapper.dataset.position = Math.abs(index - selectedIndex);
+    cardWrapper.style.left = `${workingIndex * 20}%`;
+  });
+};
+
+applyCardPositions();
+
+// Helpers
+const decreaseSelectedIndex = () => {
+  if (selectedIndex > 0) {
+    selectedIndex -= 1;
+    applyCardPositions();
+  } else {
+    selectedIndex = cardWrappers.length - 1; // Loop to the last card
+    applyCardPositions();
+  }
+};
+
+const increaseSelectedIndex = () => {
+  if (selectedIndex < cardWrappers.length - 1) {
+    selectedIndex += 1;
+    applyCardPositions();
+  } else {
+    selectedIndex = 0; // Loop to the first card
+    applyCardPositions();
+  }
+};
+
+// Automatic slide
+const startAutoSlide = () => {
+  slideInterval = setInterval(() => {
+    increaseSelectedIndex();
+  }, 2000); // Adjust the interval as needed (e.g., 2000 milliseconds = 2 seconds)
+};
+
+// Swipe events
+let startPos = [0, 0];
+
+gallery.addEventListener('pointerdown', (e) => {
+  clearInterval(slideInterval);
+  startPos = [e.clientX, e.clientY];
+});
+
+gallery.addEventListener('pointerup', (e) => {
+  const endPos = [e.clientX, e.clientY];
+
+  // Threshold
+  if (Math.abs(endPos[0] - startPos[0]) < 50) {
+    return;
+  }
+
+  if (endPos[0] < startPos[0]) {
+    increaseSelectedIndex();
+  }
+
+  if (endPos[0] > startPos[0]) {
+    decreaseSelectedIndex();
+  }
+
+  startAutoSlide(); // Start automatic slide after user interaction
+});
+
+// Start automatic slide on page load
+startAutoSlide();
+
+ </script> -->
+    <!-- Content goes here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vibrant.js/1.0.0/Vibrant.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

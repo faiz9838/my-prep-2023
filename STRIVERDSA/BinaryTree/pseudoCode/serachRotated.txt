@@ -1,0 +1,15 @@
+Pehle arr[low] <= arr[mid] se compare kro
+Agar ye condition true hai to Left part mai jaao
+warna Right part mai jaao
+
+for left 
+check kro if target <= arr[low] se aur arr[mid] >= target se 
+      high = mid - 1 krdo
+else 
+      low = mid + 1
+
+check kro else if arr[high] >= target aur arr[mid] <= target to
+      low = mid + 1;
+else 
+      high = mid - 1;
+

@@ -1,0 +1,8 @@
+check kro agar element duplicate hai to kaise find kre
+
+then check arr[mid] == arr[high] or arr[mid] == arr[low] to 
+low++ krte jaao aur High--
+aur continue ka use kro
+
+
+then use search sorted 1 ka algorithm

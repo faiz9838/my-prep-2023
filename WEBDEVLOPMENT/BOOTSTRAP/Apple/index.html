@@ -1,0 +1,2704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown on Link Hover</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+   
+    <link rel="stylesheet" href="mac.css">
+   
+    <!-- <style>
+      /* Add your custom styles here */
+      .navbar {
+        position: relative;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: 60vh; /* Set the max-height to 60% of the viewport height */
+        overflow-y: auto; /* Add scroll if content exceeds the height */
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        z-index: 1;
+      }
+
+      .navbar-nav li:hover .dropdown-content {
+        display: block;
+      }
+    </style> -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-apple"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"
+            />
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"
+            /></svg
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class=""><i class="bi bi-list"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/WEBDEVLOPMENT/BOOTSTRAP/Apple/store.html">Store</a>
+              <div class="dropdown-content">
+                <div class=" container list-wrapper">
+                  <div class="shop col-auto">
+                    <ul>
+                     <h5 class="mini-header">Shop</h5>
+                     <a href=""><li>Shop the latest</li></a>
+                     <a href=""><li>Mac</li></a>
+                     <a href=""><li>iPad</li></a>
+                     <a href=""><li>iPhone</li></a>
+                     <a href=""><li>Apple Watch</li></a>
+                     <a href=""><li>Accessories</li></a>
+
+                 
+                   </ul>
+                  </div>
+                  <div class="quick-link col-auto">
+                   <ul>
+                    <h5 class="mini-header">Quick Link</h5>
+                     <a href=""><li>Find a Store</li></a>
+                     <a href=""><li>Order Status</li></a>
+                     <a href=""><li>Ways to Buy</li></a>
+                   </ul>
+                  </div>
+                  <div class="special-stores">
+                    <ul>
+                      <h5 class="mini-header">Shop</h5>
+                      <a href=""><li>Education</li></a>
+                      <a href=""><li>Bussines</li></a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://127.0.0.1:5500/WEBDEVLOPMENT/BOOTSTRAP/Apple/mac.html#">Mac</a>
+              <div class="dropdown-content">
+                <div class=" container list-wrapper">
+                  <div class="shop col-auto">
+                    <ul>
+                     <h5 class="mini-header">Explore Mac</h5>
+                     <a href=""><li>Explore All Mac</li></a>
+                     <a href=""><li>MacBook Air</li></a>
+                     <a href=""><li>MacBook Pro</li></a>
+                     <a href=""><li>iMac</li></a>
+                     <a href=""><li>Mac Mini</li></a>
+                     <a href=""><li>Mac Pro</li></a>
+                     <a href=""><li>Displays</li></a>
+                   </ul>
+                  </div>
+                  <div class="quick-link col-auto">
+                   <ul>
+                    <h5 class="mini-header">Shop Mac</h5>
+                     <a href=""><li>Shop Mac</li></a>
+                     <a href=""><li>Mac Accessiories</li></a>
+                     <a href=""><li>Ways to Buy</li></a>
+                   </ul>
+                  </div>
+                  <div class="special-stores">
+                    <ul>
+                      <h5 class="mini-header">More From Mac</h5>
+                      <a href=""><li>Mac Support</li></a>
+                      <a href=""><li>AppleCare+ for Mac</li></a>
+                      <a href=""><li>MacOS Sonoma</li></a>
+                      <a href=""><li>Apple by Apple</li></a>
+                      <a href=""><li>Continuity</li></a>
+                      <a href=""><li>iCloud+</li></a>
+                      <a href=""><li>Mac for Bussiness</li></a>
+                      <a href=""><li>Education</li></a>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+        
+            <li class="nav-item">
+              <a class="nav-link" href="#">iPad</a>
+              <div class="dropdown-content">
+                <div class=" container list-wrapper">
+                  <div class="shop col-auto">
+                    <ul>
+                     <h5 class="mini-header">Explore iPad</h5>
+                     <a href=""><li>Explore All iPad</li></a>
+                     <a href=""><li>iPad Air</li></a>
+                     <a href=""><li>iPad Pro</li></a>
+                     <a href=""><li>iPad</li></a>
+                     <a href=""><li>iPad Mini</li></a>
+                     <a href=""><li>Apple Pencil</li></a>
+                     <a href=""><li>Keyboards</li></a>
+                   </ul>
+                  </div>
+                  <div class="quick-link col-auto">
+                   <ul>
+                    <h5 class="mini-header">Shop iPad</h5>
+                     <a href=""><li>Shop iPad</li></a>
+                     <a href=""><li>iPad Accessiories</li></a>
+                     <a href=""><li>Ways to Buy</li></a>
+                   </ul>
+                  </div>
+                  <div class="special-stores">
+                    <ul>
+                      <h5 class="mini-header">More From iPad</h5>
+                      <a href=""><li>iPad Support</li></a>
+                      <a href=""><li>AppleCare+ for iPad</li></a>
+                      <a href=""><li>iPadOS Sonoma</li></a>
+                      <a href=""><li>Apple by Apple</li></a>
+                      <a href=""><li>Continuity</li></a>
+                      <a href=""><li>iCloud+</li></a>
+                      <a href=""><li>iPad for Bussiness</li></a>
+                      <a href=""><li>Education</li></a>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">iPhone</a>
+              <div class="dropdown-content">
+                <a href="#">faiz 1</a>
+                <a href="#">Subitem 2</a>
+                <a href="#">Subitem 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Watch</a>
+              <div class="dropdown-content">
+                <a href="#">talha A</a>
+                <a href="#">Subitem B</a>
+                <a href="#">Subitem C</a>
+              </div>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">AirPods</a>
+              <div class="dropdown-content">
+                <a href="#">faiz 1</a>
+                <a href="#">Subitem 2</a>
+                <a href="#">Subitem 3</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">TV & Home</a>
+              <div class="dropdown-content">
+                <a href="#">talha A</a>
+                <a href="#">Subitem B</a>
+                <a href="#">Subitem C</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Entertainment</a>
+              <div class="dropdown-content">
+                <a href="#">talha A</a>
+                <a href="#">Subitem B</a>
+                <a href="#">Subitem C</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Accessories</a>
+              <div class="dropdown-content">
+                <a href="#">talha A</a>
+                <a href="#">Subitem B</a>
+                <a href="#">Subitem C</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+              <div class="dropdown-content">
+                <a href="#">talha A</a>
+                <a href="#">Subitem B</a>
+                <a href="#">Subitem C</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-search"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">talha A</a>
+                <a href="#">Subitem B</a>
+                <a href="#">Subitem C</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="bi bi-bag"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="#">talha A</a>
+                <a href="#">Subitem B</a>
+                <a href="#">Subitem C</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Container-1 -->
+    <main>
+      <!-- <div class="container-fluid home-page">
+        <!-- <div class="container">
+          <div class="head-image">
+            <img
+              src="front-image/portrait_base__bwsgtdddcl7m_large_2x.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="hero-section col-6 col-sm-12 col-md-auto col-lg-auto col-xl-auto"
+          >
+            <a class="header-1" href="#"
+              ><i class="bi bi-apple"></i>Vision Pro</a
+            >
+            <a class="sub-header" href="#"
+              >Welcome to the era of spatial computing.</a
+            >
+            <a href="#"><h4>Pre-order starting 1.19 at 5:00 a.m. PT</h4></a>
+            <a href="#"><h4>Available starting 2.2</h4></a>
+            <a class="learn" href="#">Learn More</a>
+          </div>
+        </div> -->
+
+        <!-- <div class="container video-container" id="videoId">
+          <!-- <div class="content col-6">
+            <h1>Explore more iPhone.</h1>
+            <a href="#container-6">Explore more</a>
+          </div> -->
+
+             <div class="container-fluid video-hero-container" id="videoId">
+           <!-- <div class="content col-6">
+             <h1>Explore more iPhone.</h1>
+             <a href="#container-6">Explore more</a>
+           </div> -->
+ 
+           <video
+             autoplay
+             muted
+             playsinline
+             loop
+            class="myVideo"
+             <source
+             src="videos/iphone15.mp4"
+             type="video/mp4"
+           ></video>
+         </div>
+          <!-- <video
+            autoplay
+            muted
+            playsinline
+            loop
+            <source
+            src="videos/iphone15.mp4"
+            type="video/mp4"
+          ></video>
+        </div> --> 
+        <!-- Your other content goes here -->
+
+        <!-- <div class="container">
+          <div class="ratio ratio-16x9">
+            <video
+              id="video-player"
+              class="..."
+              src="videos/Trim.mp4"
+              autoplay
+              playsinline
+              muted
+              loop
+            ></video>
+          </div>
+        </div> -->
+      </div> 
+
+      <div class="container-fluid container-2">
+        <div class="hero-section-2 col-auto">
+          <p class="new">New</p>
+          <a class="header" href="#">iPhone 15 Pro</a>
+          <img
+            src="15pro/headline_titanium__cj5ay941qj6u_large_2x.jpg"
+            alt=""
+          />
+          <h4 class="price">
+            From &#x20B9;21483.00/mo.‡ or &#x20B9;134900.00*
+          </h4>
+          <div class="link-1">
+            <button class="btn m-2" href="#">Buy</button>
+            <a class="learn m-2" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid container-3">
+        <div class="hero-section-2 col-auto">
+          <a class="header" href="#">iPhone 15</a>
+          <a class="sub-header" href="#">New camera. New design. Newphoria.</a>
+          <div class="link-1">
+            <a class="learn m-3" href="#">Learn More</a>
+            <a class="learn m-3" href="#">Buy</a>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="container-fluid container-4">
+          <div class="hero-section-2 col-5">
+            <h3 class="name">iPhone SE</h3>
+            <h1 class="header">Love the power</h1>
+            <h1 class="header">Love the price</h1>
+            <h4 class="price">From 49900.0*</h4>
+            <button class="btn">Buy</button>
+            <a href="#">Learn More </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="container-fluid container-5">
+        <div class="row">
+          <img src="image/guided_tour__c40f88on9o8y_large_2x.jpg" alt="" />
+          <div class="hero-section-2 col-4">
+            <h4 class="upper-heading">A Guided Tour of</h4>
+            <h1 class="heading">iPhone 15 & <br />iPhone 15 Pro</h1>
+            <div class="btn-wrapper">
+              <a class="watch-now" href="#">Watch the film</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid container-6" id="container-6">
+        <div class="container">
+          <div class="header">
+            <h1>Which iPhone is right for you</h1>
+          </div>
+          <div class="content">
+            <div class="col-auto image-wrapper">
+              <a href=""
+                ><img
+                  src="15pro/compare_iphone_15__light-pink_large_2x.png"
+                  alt=""
+              /></a>
+              <div class="color-plate">
+                <img
+                  src="color-plates/swatch_iphone_15_pro__gdyn1ct073m2_large_2x.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-wrapper">
+                <p class="new">New</p>
+                <h4 class="model-name">iPhone 15 Pro</h4>
+                <h5 class="sub-header">The ultimate iPhone.</h5>
+                <h6 class="price">From &#8377;134000.00*</h6>
+                <button class="btn">Buy</button>
+                <a href="$">Learn More</a>
+              </div>
+              <hr />
+              <div class="width col-auto">
+                <h5 class="info">
+                  17.00 cm (6.7") or<br />
+                  15.54 cm (6.1")
+                </h5>
+                <p class="specs">
+                  Super Retina XDR dispaly'<br />ProMotion technology<br />Always-On
+                  display
+                </p>
+              </div>
+              <div class="display">
+                <img
+                  src="frames-png/icon_design__bbi8qdcsnygy_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  Titanium with textured<br />matte glass back<br /><br />Action
+                  button
+                </p>
+              </div>
+              <div class="dynamic-island">
+                <img
+                  src="frames-png/icon_dynamic_island__d9d7y565nzsm_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  <span>Dynamic island</span><br />A magical way to interact<br />with
+                  iPhone
+                </p>
+              </div>
+              <div class="processor">
+                <img
+                  src="frames-png/icon_a17__cdbw51i5m1qu_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">A17 Pro chip<br />with 6-core GPU</p>
+              </div>
+              <div class="camera">
+                <img
+                  src="frames-png/icon_14_pro_camera__fxu2mrckyk2u_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  Pro camera system<br />
+                  48MP Main | Ultra Wide |<br />Telephoto<br />
+                  Super-high-resolution photos<br />(24MP and 48MP)<br />
+
+                  Next-generation portraits with<br />Focus and Depth Control
+                </p>
+              </div>
+              <div class="zoom">
+                <p class="specs">
+                  Up to<br /><strong>10x</strong><br />optical zoom range
+                </p>
+              </div>
+              <div class="sos">
+                <img
+                  src="frames-png/icon_sos__d13do2p9n7qu_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Emergency SOS<br />Crash Detection</p>
+              </div>
+              <div class="battery">
+                <img
+                  src="frames-png/icon_battery__wqowcbwj50y2_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Up to 29 hours<br />video playback</p>
+              </div>
+              <div class="charger">
+                <img
+                  src="frames-png/icon_usbc__dpqakxk8o94y_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  USB-C<br />Supports USB 3 for<br />up to 20x faster transfers
+                </p>
+              </div>
+              <div class="face-id">
+                <img
+                  src="frames-png/icon_face_id__eyzciiwkc5oy_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Face ID</p>
+              </div>
+
+              <hr />
+            </div>
+            <div class="col-auto image-wrapper">
+              <a href=""
+                ><img
+                  src="15pro/compare_iphone_15__light-pink_large_2x.png"
+                  alt=""
+              /></a>
+              <div class="color-plate">
+                <img
+                  src="color-plates/swatch_iphone_15__dt2j59fau9ua_large_2x.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-wrapper">
+                <p class="new">New</p>
+                <h4 class="model-name">iPhone 15</h4>
+                <h5 class="sub-header">A total poerhouse.</h5>
+                <h6 class="price">From &#8377;134000.00*</h6>
+                <button class="btn">Buy</button>
+                <a href="$">Learn More</a>
+              </div>
+              <hr />
+              <div class="width col-auto">
+                <h5 class="info">
+                  17.00 cm (6.7") or<br />
+                  15.54 cm (6.1")
+                </h5>
+                <p class="specs">Super Retina XDR dispaly<br />-<br />-</p>
+              </div>
+              <div class="display">
+                <img
+                  src="frames-png/icon_design__bbi8qdcsnygy_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  Almunium with colour-infused<br />
+                  glass back<br /><br />Ring/Silent switch
+                </p>
+              </div>
+              <div class="dynamic-island">
+                <img
+                  src="frames-png/icon_dynamic_island__d9d7y565nzsm_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  <span>Dynamic island</span><br />A magical way to interact<br />with
+                  iPhone
+                </p>
+              </div>
+              <div class="processor">
+                <img
+                  src="frames-png/icon_a16__fjqclpv24fma_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">A16 Bionic chip<br />with 5-core GPU</p>
+              </div>
+              <div class="camera">
+                <img
+                  src="frames-png/icon_14_camera__e6tkwcfw12wm_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  Advanced dual-camera system<br />
+                  48MP Main | Ultra Wide |<br /><br />
+                  Super-high-resolution photos<br />(24MP and 48MP)<br />
+
+                  Next-generation portraits with<br />Focus and Depth Control
+                </p>
+              </div>
+              <div class="zoom">
+                <p class="specs">
+                  <br /><strong>4x</strong><br />optical zoom range
+                </p>
+              </div>
+              <div class="sos">
+                <img
+                  src="frames-png/icon_sos__d13do2p9n7qu_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Emergency SOS<br />Crash Detection</p>
+              </div>
+              <div class="battery">
+                <img
+                  src="frames-png/icon_battery__wqowcbwj50y2_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Up to 26 hours<br />video playback</p>
+              </div>
+              <div class="charger">
+                <img
+                  src="frames-png/icon_usbc__dpqakxk8o94y_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">USB-C<br />Supports USB 2<br /></p>
+              </div>
+              <div class="face-id">
+                <img
+                  src="frames-png/icon_face_id__eyzciiwkc5oy_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Face ID</p>
+              </div>
+
+              <hr />
+            </div>
+            <div class="col-auto image-wrapper">
+              <img
+                src="15pro/compare_iphone_15__light-pink_large_2x.png"
+                alt=""
+              />
+              <div class="color-plate">
+                <img
+                  src="color-plates/swatch_iphone_14__eatap63qk6wm_large_2x.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-wrapper">
+                <p class="new">New</p>
+                <h4 class="model-name">iPhone 14</h4>
+                <h5 class="sub-header">As amazing as ever.</h5>
+                <h6 class="price">From &#8377;69900.00*</h6>
+                <button class="btn">Buy</button>
+                <a href="$">Learn More</a>
+              </div>
+              <hr />
+              <div class="width col-auto">
+                <h5 class="info">
+                  16.95 cm (6.7") or<br />
+                  15.40 cm (6.1")
+                </h5>
+                <p class="specs">Super Retina XDR dispaly<br />-<br />-</p>
+              </div>
+              <div class="display">
+                <img
+                  src="frames-png/icon_design__bbi8qdcsnygy_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  Almunium with<br />glass back<br /><br />Ring/Silent switch
+                </p>
+              </div>
+              <div class="dynamic-island">
+                <p class="specs">-</p>
+                <p class="specs">-</p>
+                <p class="specs">-</p>
+              </div>
+              <div class="processor">
+                <img
+                  src="frames-png/icon_a15__gde9u4vunqqa_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">A15 Bionic chip<br />with 5-core GPU</p>
+              </div>
+              <div class="camera">
+                <img
+                  src="frames-png/icon_14_camera__e6tkwcfw12wm_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  Dual-camera system<br />
+                  12MP Main | Ultra Wide |<br /><br />
+                  -<br /><br />
+
+                  Portrait mode with<br />Focus and Depth Control
+                </p>
+              </div>
+              <div class="zoom">
+                <p class="specs">
+                  <br /><strong>2x</strong><br />optical zoom range
+                </p>
+              </div>
+              <div class="sos">
+                <img
+                  src="frames-png/icon_sos__d13do2p9n7qu_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Emergency SOS<br />Crash Detection</p>
+              </div>
+              <div class="battery">
+                <img
+                  src="frames-png/icon_battery__wqowcbwj50y2_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Up to 26 hours<br />video playback</p>
+              </div>
+              <div class="charger">
+                <img
+                  src="frames-png/icon_lightning__qkwlyw9y636i_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Lightning<br />Supports USB 2<br /></p>
+              </div>
+              <div class="face-id">
+                <img
+                  src="frames-png/icon_face_id__eyzciiwkc5oy_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Face ID</p>
+              </div>
+
+              <hr />
+            </div>
+
+            <div class="col-auto image-wrapper">
+              <img
+                src="15pro/compare_iphone_se__d5blqx1pgymq_large_2x.png"
+                alt=""
+              />
+              <div class="color-plate">
+                <img
+                  src="color-plates/swatch_iphone_se__bygc73yqw22u_large_2x.png"
+                  alt=""
+                />
+              </div>
+              <div class="content-wrapper">
+                <p class="new">New</p>
+                <h4 class="model-name">iPhone SE</h4>
+                <h5 class="sub-header">Serious power. Serious value.</h5>
+                <h6 class="price">From &#8377;49900.00*</h6>
+                <button class="btn">Buy</button>
+                <a href="$">Learn More</a>
+              </div>
+              <hr />
+              <div class="width col-auto">
+                <h5 class="info">
+                  17.00 cm (6.7") or<br />
+                  15.54 cm (6.1")
+                </h5>
+                <p class="specs">Retina HD dispaly<br />-<br />-</p>
+              </div>
+              <div class="display">
+                <img
+                  src="frames-png/icon_design__bbi8qdcsnygy_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  Almunium and<br />
+                  glass<br /><br />Ring/Silent switch
+                </p>
+              </div>
+              <div class="dynamic-island">
+                <p class="specs">-</p>
+                <p class="specs">-</p>
+                <p class="specs">-</p>
+              </div>
+              <div class="processor">
+                <img
+                  src="frames-png/icon_a15__gde9u4vunqqa_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">A15 Bionic chip<br />with 4-core GPU</p>
+              </div>
+              <div class="camera">
+                <img
+                  src="frames-png/icon_se_camera__cs1t6sujjdiu_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">
+                  Single-camera system<br />
+                  12MP Main <br /><br />
+                  -<br /><br />
+
+                  Portrait mode with<br />Depth Control
+                </p>
+              </div>
+              <div class="zoom">
+                <p class="specs">
+                  <br /><strong>1x</strong><br />optical zoom range
+                </p>
+              </div>
+              <div class="sos">
+                <img
+                  src="frames-png/icon_sos__d13do2p9n7qu_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Emergency SOS<br />-</p>
+              </div>
+              <div class="battery">
+                <img
+                  src="frames-png/icon_battery__wqowcbwj50y2_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Up to 15 hours<br />video playback</p>
+              </div>
+              <div class="charger">
+                <img
+                  src="frames-png/icon_lightning__qkwlyw9y636i_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Lightning<br />Supports USB 2<br /></p>
+              </div>
+              <div class="face-id">
+                <img
+                  src="frames-png/icon_touch_id__etlcbgeryay6_large_2x.png"
+                  alt=""
+                />
+                <p class="specs">Touch ID</p>
+              </div>
+
+              <hr />
+            </div>
+          </div>
+          <div class="link-div">
+            <a href="#">Compare all iPhone models</a>
+            <a href="#">Shop now</a>
+          </div>
+        </div>
+      </div>
+   
+    <div class="second-main container-fluid">
+      <div class="header col-auto">
+        <h1 class="heading">Way to buy iPhone</h1>
+      </div>
+      <div class="row">
+        <div class="col-5 div-1">
+          <div class="content col-auto">
+            <h3 class="specs">
+              Get &#8377;18700.00-&#8377;64800.00 in<br />credit when you<br />trade
+              in iPhone 11 or higher.
+            </h3>
+            <a href="#">See what your device is worth</a>
+          </div>
+        </div>
+        <div class="col-5 div-2">
+          <div class="content col-auto">
+            <h3 class="specs">Pay with 3-or 6-month<br />No Cost EMI.</h3>
+            <p>Choose the way that's right for you.</p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-2">
+        <div class="content col-5">
+          <h3 class="heading">Why Apple is the best place to buy iPhone</h3>
+          <p class="para">
+            You can choose a payment option that works for you, pay less with a
+            trade‑in, connect your new iPhone to your carrier and get set up
+            quickly. You can also chat with a Specialist anytime.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="big-header">
+        <h1 class="heading">Featured accessories</h1>
+      </div>
+
+      <div class="row row-3">
+        <div class="content col-3">
+          <h3 class="heading">MagSafe</h3>
+          <p class="para">
+            Snap on a magnetic case, wallet or both. And get fast, efficient
+            wireless charging.
+          </p>
+          <a href="#">Shop MagSafe accessories</a>
+        </div>
+      </div>
+      <div class="row row-4">
+        <div class="content col-4">
+          <h3 class="heading">AirTag</h3>
+          <p class="para">
+            Attach one to your keys. Put another in your backpack. If they’re
+            misplaced, simply use the Find My app.
+          </p>
+          <div class="link">
+            <a href="#">Buy</a>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="row row-5">
+        <div class="content col-3">
+          <h3 class="heading">Magic runs in the family.</h3>
+          <p class="para">
+            Explore all AirPods models and find the best ones for you.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="row row-6">
+        <a href="#">Shop all iPhone accessories</a>
+      </div>
+      <div class="row-7 row">
+        <div class="col-3">
+          <i class="bi bi-box-seam"></i>
+          <h5>Free delivery and pickup</h5>
+          <p class="para">Get free delivery or pick up at your Apple Store.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="col-3">
+          <i class="bi bi-bag"></i>
+          <h5>Ways to Buy</h5>
+          <p class="para">Choose the way that’s right for you.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="col-3">
+          <i class="bi bi-people"></i>
+          <h5>Get help buying</h5>
+          <p>Call specialist or online.<br />Call 000800 040 1966.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="big-header">
+        <h1>What makes an iPhone an iPhone?</h1>
+      </div>
+      <div class="row row-8">
+        <div class="content col-auto">
+          <h3 class="heading">iOS 17</h3>
+          <p class="para">Every day. More extraordinary.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="row row-9">
+        <div class="col-5 div-1">
+          <div class="content col-10">
+            <h1 class="heading">Switching to iPhone is super simple.</h1>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="col-5 div-2">
+          <div class="content col-8">
+            <h1 class="heading">Privacy.<br />That’s iPhone.</h1>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="big-header">
+        <h1>Get more out of your iPhone.</h1>
+      </div>
+      <div class="row row-10">
+        <div class="content col-4">
+          <h1 class="main-heading"><i class="bi bi-apple"></i>One</h1>
+          <h3 class="heading">
+            Bundle four Apple services. And enjoy more for less.
+          </h3>
+          <div class="link">
+            <a href="#">Try it free</a>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid row-11">
+        <div class="content col-3">
+          <h1 class="main-heading"><i class="bi bi-apple"></i>tv+</h1>
+          <h3 class="heading">
+            Get 3 months of Apple TV+ free when you buy an iPhone.
+          </h3>
+          <div class="link">
+            <a href="#">Try it free</a>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="btn-wrapper col-12">
+          <div id="animationButton" onclick="toggleAnimation()">
+            <i class="bi bi-play-fill"></i>
+          </div>
+        </div>
+        <div class="row" id="cardContainer1">
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img srcset="second-main/tv+/criminal-record.jpg 2x" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img srcset="second-main/tv+/flower-moon.jpg 2x" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/lesson-in-chemistry.jpg " alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/hijack.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/platonic.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-crowded-room.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/738x416.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/criminal-record.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+        </div>
+
+        <div class="row" id="cardContainer2">
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-last-thing-he-told-me.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/738x416.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/monarch.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/slow-horses.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/lesson-in-chemistry.jpg " alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/lesson-in-chemistry.jpg " alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/hijack.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/platonic.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-crowded-room.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-last-thing-he-told-me.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/738x416.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/monarch.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/slow-horses.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/lesson-in-chemistry.jpg " alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/hijack.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/platonic.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-crowded-room.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/670x377.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/hijack.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/flower-moon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/lesson-in-chemistry.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/slow-horses.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-last-thing-he-told-me.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/738x416.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/monarch.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/slow-horses.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/lesson-in-chemistry.jpg " alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/hijack.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/platonic.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-crowded-room.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/738x416.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/hijack.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/platonic.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-crowded-room.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/738x416.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/lesson-in-chemistry.jpg " alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/hijack.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/platonic.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-last-thing-he-told-me.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/738x416.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/monarch.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/slow-horses.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/lesson-in-chemistry.jpg " alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-morning.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-last-thing-he-told-me.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/738x416.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/monarch.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/slow-horses.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/lesson-in-chemistry.jpg " alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/john lenon.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/foral-mankind.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/severance.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/the-crowded-room.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/buccanneers.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/shrinking.jpg" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+          <div
+            class="card"
+            onmouseover="showButton(this)"
+            onmouseout="hideButton(this)"
+          >
+            <img src="second-main/tv+/670x377.webp" alt="" />
+            <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-12"> 
+        <div class="div-1">
+          <div class="gallery col-5">
+            <div class="content col-5">
+              <h1 class="main-header"><i class="bi bi-apple"></i>Music</h1>
+              <h3 class="sub-header">Over 100 million songs.</h3>
+              <h3 class="sub-header">Start listening for free today.</h3>
+              <div class="link">
+                <a href="#">Try it free</a>
+                <a href="#">Learn More</a>
+              </div>
+              <div class="btn col-13 " id="animationButton" >
+                <button id="toggleButton">
+                  <i class="bi bi-play-fill"></i>
+                </button>
+              </div>
+             
+            </div>
+            <div class="card-wrapper">
+              <div class="card"  onmouseover="showButton(this)"
+              onmouseout="hideButton(this)">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+               
+                </div>
+                <span class="hover-button" onclick="alert('Button Clicked')"
+              >Stream now
+            </span>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card" onmouseover="showButton(this)"
+              onmouseout="hideButton(this)">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+               
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper" onmouseover="showButton(this)"
+            onmouseout="hideButton(this)">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="bottom-body">
+                  <h5 class="body-header">Song name</h5>
+                  <p class="sub-header">artist name</p>
+                </div>
+              </div>
+            </div>
+           
+            <!-- Add this button in your HTML -->
+           
+          
+        </div>
+      </div>
+      
+      <div class="div-2 col-4" id="div-2">
+      <div class="content col-8">
+        
+          <h1 class="main-header"><i class="bi bi-apple"></i>Arcade</h1>
+          <h3 class="sub-header">Get 3 months of Apple Arcade free when you buy an iPhone.</h3>
+         
+          <div class="link">
+            <a href="#">Try it free</a>
+            <a href="#">Learn More</a>
+          </div>
+          
+        </div>
+      </div>
+      </div>
+    </div>
+    </main>
+    <footer>
+      <div class="nav container">
+        <div class="index">
+          <a href="#"><i class="bi bi-apple"></i></a> <span><i class="bi bi-chevron-right"></i>  iPhone</span>
+        </div>
+      </div>
+      <div class="container link-wrapper">
+        <div>
+          <ul>
+            <h4>Shop and Learn</h4>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">AirPods</a></li>
+            <li><a href="#">TV & Home</a></li>
+            <li><a href="#">AirTag</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+         
+          <ul>
+              <h4>Apple Wallet</h4>
+              <li><a href="#">Wallet</a></li>
+            
+            </ul>
+          
+         </div>
+         <div>
+          <ul>
+            <h4>Account</h4>
+            <li><a href="#">Manage Your Apple ID</a></li>
+            <li><a href="#">Apple Store Account</a></li>
+            <li><a href="#">iCloud.com</a></li>
+            
+          </ul>
+          <ul>
+            <h4>Entertainment</h4>
+            <li><a href="#">Apple One </a></li>
+            <li><a href="#">Apple TV+</a></li>
+            <li><a href="#">Apple Music</a></li>
+            <li><a href="#">Apple Arcade</a></li>
+            <li><a href="#">Apple Podcasts</a></li>
+            <li><a href="#">Apple Books</a></li>
+            <li><a href="#">App Store</a></li>
+          </ul>
+         </div>
+         <div>
+          <ul>
+            <h4>Apple Store</h4>
+            <li><a href="#">Find a Store</a></li>
+            <li><a href="#">Genius Bar</a></li>
+            <li><a href="#">Today at Apple</a></li>
+            <li><a href="#">Apple Camp</a></li>
+            <li><a href="#">Apple Trade In</a></li>
+            <li><a href="#">Ways to Buy</a></li>
+            <li><a href="#">Recycling Programme</a></li>
+            <li><a href="#">Order Status</a></li>
+            <li><a href="#">Shopping Help</a></li>
+           
+          </ul>
+         </div>
+         <div>
+          <ul>
+            <h4>For Business</h4>
+            <li><a href="#">Apple and Business</a></li>
+            <li><a href="#">Shop for Business</a></li>
+          </ul>
+          <ul>
+            <h4>For Education</h4>
+            <li><a href="#">Apple and Education</a></li>
+            <li><a href="#">Shop for Education</a></li>
+            <li><a href="#">Shop for University</a></li>
+           
+            
+          </ul>
+          <ul>
+            <h4>For Healthcare</h4>
+            <li><a href="#">Apple in Healthcare</a></li>
+            <li><a href="#">Health on Apple Watch</a></li>
+           
+          </ul>
+        </div>
+       
+         <div>
+           <ul>
+            <h4>Apple Values</h4>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Enviroment</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Supplier Responsibility</a></li>
+          </ul>
+          <ul>
+            <h4>About Apple</h4>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Apple Leadership</a></li>
+            <li><a href="#">Career Opportunities</a></li>
+            <li><a href="#">Investors</a></li>
+            <li><a href="#">Ethics & Compliance</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Conatct Apple</a></li>
+          </ul>
+         </div>
+        </div>
+       
+        <div class="container contact">
+          <h6 class="contact-text">More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call 000800 040 1966.</h6>
+          <hr>
+          <div class="copyright-wrapper">
+            <div class="copyright col-auto">
+              <p class="para">
+                Copyright © 2024 Apple Inc. All rights reserved.
+              </p>
+            </div>
+            <div class="privacy ">
+              <p class="privacy-link"><a>Privacy</a> | <a>Terms of Use</a> | <a>Sales Policy</a> | <a> Legal</a> | <a>Site Map</a> </p>
+              <div class="reigon ">
+                <a href="#">India</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+   
+    <script>
+      function toggleIcon() {
+        const child = document.getElementById("myIcon").childNodes[0];
+        if (child.className === "fas fa-bars") child.className = "fas fa-times";
+        else child.className = "fas fa-bars";
+      }
+    </script>
+    <!-- Video autoplay -->
+    <script>
+      function toggleMute() {
+        var video = document.getElementById("videoId");
+
+        if (video.muted) {
+          video.muted = false;
+        } else {
+          debugger;
+          video.muted = true;
+          video.play();
+        }
+      }
+
+      $(document).ready(function () {
+        setTimeout(toggleMute, 3000);
+      });
+    </script>
+
+
+    <!-- CARD SLIDER 1 -->
+    <script>
+      const cardContainer1 = document.getElementById("cardContainer1");
+      const cardContainer2 = document.getElementById("cardContainer2");
+      const animationButton = document.getElementById("animationButton");
+      let isPlaying = true;
+      let animationInterval1, animationInterval2;
+
+      function toggleAnimation() {
+        if (isPlaying) {
+          clearInterval(animationInterval1);
+          clearInterval(animationInterval2);
+          resetCards(cardContainer1);
+          resetCards(cardContainer2);
+          animationButton.innerHTML = '<i class="bi bi-play-fill"></i> ';
+          animationButton.innerHTML = '<i class="bi bi-play-fill"></i> ';
+        } else {
+          startAnimation(cardContainer1, 0.03, 0); // Start both animations from the same initial point (0)
+          startAnimation(cardContainer2, 0.005, 90);
+          animationButton.innerHTML = '<i class="bi bi-pause-fill"></i> ';
+          animationButton.innerHTML = '<i class="bi bi-pause-fill"></i> ';
+        }
+
+        isPlaying = !isPlaying;
+      }
+
+      function startAnimation(cardContainer, speed, initialTranslateValue) {
+        let translateValue = initialTranslateValue;
+
+        const animationInterval = setInterval(() => {
+          cardContainer.style.transform = `translateX(${translateValue}%)`;
+          translateValue -= speed;
+
+          if (translateValue < -300) {
+            translateValue = 100;
+          }
+        }, 40);
+
+        if (cardContainer === cardContainer1) {
+          animationInterval1 = animationInterval;
+        } else {
+          animationInterval2 = animationInterval;
+        }
+      }
+
+      function resetCards(cardContainer) {
+        cardContainer.style.transform = "translateX(0%)";
+      }
+
+      function showButton(card) {
+        const hoverButton = card.querySelector(".hover-button");
+        hoverButton.style.display = "block";
+      }
+
+      function hideButton(card) {
+        const hoverButton = card.querySelector(".hover-button");
+        hoverButton.style.display = "none";
+      }
+    </script>
+
+    <!-- SLIDER CONTAINER -->
+
+    <script>
+      const gallery = document.querySelector(".gallery");
+      const cardWrappers = document.querySelectorAll(".card-wrapper");
+      const toggleButton = document.getElementById("toggleButton");
+
+      let selectedIndex = 0; // Start from the first card
+      let slideInterval;
+      let isAutoSlideRunning = false;
+
+      // Move card position depend on selected index
+      const applyCardPositions = () => {
+        cardWrappers.forEach((cardWrapper, index) => {
+          const workingIndex =
+            selectedIndex <= 2
+              ? index + (2 - selectedIndex)
+              : index - selectedIndex + 2;
+          cardWrapper.dataset.index = index;
+          cardWrapper.dataset.position = Math.abs(index - selectedIndex);
+          cardWrapper.style.left = `${workingIndex * 20}%`;
+        });
+      };
+
+      applyCardPositions();
+
+      // Helpers
+      const decreaseSelectedIndex = () => {
+        if (selectedIndex > 0) {
+          selectedIndex -= 1;
+          applyCardPositions();
+        } else {
+          selectedIndex = cardWrappers.length - 1; // Loop to the last card
+          applyCardPositions();
+        }
+      };
+
+      const increaseSelectedIndex = () => {
+        if (selectedIndex < cardWrappers.length - 1) {
+          selectedIndex += 1;
+          applyCardPositions();
+        } else {
+          selectedIndex = 0; // Loop to the first card
+          applyCardPositions();
+        }
+      };
+
+      // Automatic slide
+      const startAutoSlide = () => {
+        slideInterval = setInterval(() => {
+          increaseSelectedIndex();
+          updateBackgroundColor();
+        }, 3000); // Adjust the interval as needed (e.g., 2000 milliseconds = 2 seconds)
+        toggleButton.innerHTML = '<i class="bi bi-pause-fill"></i> ';
+        isAutoSlideRunning = false;
+      };
+
+      const stopAutoSlide = () => {
+        clearInterval(slideInterval);
+        toggleButton.innerHTML = '<i class="bi bi-play-fill"></i> ';
+        isAutoSlideRunning = true;
+      };
+
+      // Toggle button event
+      toggleButton.addEventListener("click", () => {
+        if (isAutoSlideRunning) {
+          stopAutoSlide();
+        } else {
+          startAutoSlide();
+        }
+      });
+
+      // Update background color function
+      const updateBackgroundColor = () => {
+        // Generate a random color
+        const randomColor = getRandomColor();
+        gallery.style.backgroundColor = randomColor;
+      };
+
+      // Function to generate a random color
+      const getRandomColor = () => {
+        const letters = "0123456789ABCDEFabcdef";
+        let color = "#";
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16 + 1.2/5)];
+        }
+        return color ;
+      };
+
+      // Swipe events
+      let startPos = [0, 0];
+
+      gallery.addEventListener("pointerdown", (e) => {
+        stopAutoSlide();
+        startPos = [e.clientX, e.clientY];
+      });
+
+      gallery.addEventListener("pointerup", (e) => {
+        const endPos = [e.clientX, e.clientY];
+
+        // Threshold
+        if (Math.abs(endPos[0] - startPos[0]) < 50) {
+          return;
+        }
+
+        if (endPos[0] < startPos[0]) {
+          increaseSelectedIndex();
+        }
+
+        if (endPos[0] > startPos[0]) {
+          decreaseSelectedIndex();
+        }
+
+        startAutoSlide(); // Start automatic slide after user interaction
+      });
+
+      // Start automatic slide on page load
+      startAutoSlide();
+    </script>
+
+    <!-- Play and pause  -->
+    <script src="mac.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Flip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Observer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EaselPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/PixiPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+<!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/CustomEase.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  </body>
+</html>

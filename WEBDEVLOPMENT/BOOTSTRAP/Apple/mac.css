@@ -1,0 +1,681 @@
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  padding-right: 0 !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  color: white;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  background-color: rgba(0, 0, 0, 0.951);
+}
+
+*:focus {
+  outline: none;
+}
+:root {
+  --code-color: darkred;
+  --code-bg-color: #aaaaaa;
+  --code-font-size: 0px;
+  --code-line-height: 4;
+  --scroll-bar-color: #c5c5c5;
+  --scroll-bar-bg-color: #f6f6f6;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  scrollbar-width: 0;
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 20px;
+  border: 3px solid var(--scroll-bar-bg-color);
+}
+
+.main-wrapper {
+  position: relative;
+  height: auto;
+  background-color: whitesmoke;
+}
+
+.hero-section {
+  height: 45vh;
+
+  background-color: white;
+}
+
+.hero-section .hero-section-content {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.hero-section .hero-section-content .header-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .hero-section-content .header-wrapper .header {
+  font-size: 75px;
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-section .hero-section-content .para-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero-section .hero-section-content .para-wrapper .para {
+  color: black;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.video-hero-container {
+  position: relative;
+  height: 105vh;
+  margin: 0px auto;
+  overflow: none;
+  width: 100vw;
+}
+
+.video-hero-container video {
+  object-fit: cover;
+  min-width: 240vh;
+  border-radius: 2.3rem;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Mac-specification {
+  left: 0;
+  position: absolute;
+
+  bottom: none;
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+}
+
+.Mac-specification .mac-spec-wrapper {
+  height: auto;
+  padding: 0;
+}
+
+.Mac-specification .mac-spec-wrapper .header-wrapper {
+  margin-top: 130px;
+  padding-bottom: 60px;
+}
+
+.Mac-specification .mac-spec-wrapper .header-wrapper .header {
+  font-size: 55px;
+  color: black;
+  font-weight: 700;
+  padding-left: 85px;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+
+  flex-direction: row;
+  z-index: 2;
+
+  padding-left: 75px;
+  padding-right: 85px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a {
+  text-decoration: none;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a .card {
+  width: 23rem;
+  height: 40rem;
+  margin: 10px;
+  border-radius: 2rem;
+  transition: all 3s ease-in-out;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a #card-1 {
+  background-image: url("Mac/knowMac/mac_ease__hello.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a .card .content-wrapper {
+  padding: 25px;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a #card-2 {
+  background-image: url("Mac/knowMac/mac_performance__.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a #card-3 {
+  background-image: url("Mac/knowMac/mac_iphone__.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  #card-3
+  .content-wrapper
+  .mini-header {
+  color: black;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  #card-3
+  .content-wrapper
+  .main-header {
+  color: black;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a #card-4 {
+  background-image: url("Mac/knowMac/mac_compatibility__.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  #card-4
+  .content-wrapper
+  .mini-header {
+  color: black;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  #card-4
+  .content-wrapper
+  .main-header {
+  color: black;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a #card-5 {
+  background-image: url("Mac/knowMac/mac_security__.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  .card
+  .content-wrapper
+  .mini-header {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  .card
+  .content-wrapper
+  .main-header {
+  color: white;
+  font-size: 28px;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a #card-6 {
+  background-image: url("Mac/knowMac/mac_durability__.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  #card-6
+  .content-wrapper
+  .mini-header {
+  color: black;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  #card-6
+  .content-wrapper
+  .main-header {
+  color: black;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper a #card-7 {
+  background-image: url("Mac/knowMac/mac_values__c9gck9qi4kia_large_2x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  #card-7
+  .content-wrapper
+  .mini-header {
+  color: black;
+}
+
+.Mac-specification
+  .mac-spec-wrapper
+  .card-wrapper
+  a
+  #card-7
+  .content-wrapper
+  .main-header {
+  color: black;
+}
+
+.Mac-specification .mac-spec-wrapper .card-wrapper .card:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 15px rgb(211, 211, 211);
+}
+
+.Mac-specification .mac-spec-wrapper .btn-wrapper {
+  padding: 15px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.Mac-specification .mac-spec-wrapper .btn-wrapper .buttons {
+  width: 7vh;
+  height: 7vh;
+  border-radius: 2rem;
+  border: 1px solid rgba(128, 128, 128, 0.218);
+  margin: 5px;
+}
+
+.Mac-specification .mac-spec-wrapper .btn-wrapper .buttons i {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.card-wrapper .card:hover{
+  box-shadow: 2px 2px 15px rgb(185, 185, 185);
+  transform: scale(2px);
+}
+
+.line-up {
+  left: 0;
+  position: absolute;
+
+  bottom: none;
+  width: 100%;
+  height: auto;
+  background-color: whitesmoke;
+  padding: 0;
+ 
+  height: auto;
+}
+
+.line-up .lineup-wrapper {
+  overflow: hidden;
+}
+
+.line-up .lineup-wrapper .content-lineup-wrapper {
+  display: flex;
+  align-self: flex-start;
+  height: 60vh;
+  width: 100%;
+  justify-content: space-between;
+  
+}
+
+.line-up .lineup-wrapper .content-lineup-wrapper .header-wrapper {
+ 
+  display: flex;
+  align-items: flex-end;
+}
+
+.line-up .lineup-wrapper .content-lineup-wrapper .header-wrapper .header {
+  font-size: 55px;
+  color: black;
+}
+
+.line-up .lineup-wrapper .content-lineup-wrapper .link-wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  padding-bottom: 10px;
+}
+
+.line-up .lineup-wrapper .content-lineup-wrapper .link-wrapper a {
+  font-size: 22px;
+}
+
+.line-up .button-wrapper {
+  
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.line-up .button-wrapper .btn-container {
+ 
+  display: flex;
+  height: 10vh;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+}
+
+.line-up .button-wrapper .btn-container .myButton {
+  height: 40%;
+
+  margin: 10px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  outline: none;
+  border: none;
+  text-align: center;
+  color: #000000;
+  padding: 1.4rem;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 1.5rem;
+}
+
+.line-up .button-wrapper .btn-container .myButton:hover {
+  background-color: #000000;
+  color: white;
+  font-weight: 400;
+}
+
+.line-up .lineup-product {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  align-items: flex-start;
+  height: auto;
+  justify-content: flex-start;
+ 
+  overflow: hidden;
+  margin: auto;
+}
+
+.line-up .lineup-product .content-div {
+  display: flex;
+  align-items: flex-start;
+  margin: 50px auto;
+  flex-direction: row;
+  height: auto;
+ 
+  overflow-x: scroll;
+}
+
+.line-up .lineup-product .content-div .card {
+  height: auto;
+  padding: 0px;
+  min-width: 28rem;
+  border: none;
+  overflow: hidden;
+ 
+}
+
+.line-up .lineup-product .content-div .card .image-wrapper {
+  
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-up .lineup-product .content-div .card .image-wrapper img {
+  width: 26rem;
+  object-fit: contain;
+  aspect-ratio: 3/2;
+ 
+  margin: auto;
+  padding: 1rem;
+}
+
+.line-up .lineup-product .content-div .card .header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  
+  text-align: center;
+  height: auto;
+}
+
+.line-up .lineup-product .content-div .card .header-wrapper .mini-header {
+  color: rgb(203, 64, 13);
+  font-size: 14px;
+  text-align: center;
+}
+
+.line-up .lineup-product .content-div .card .header-wrapper .main-header {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 600;
+}
+.line-up .lineup-product .content-div .card .header-wrapper .sub-header {
+  color: #000000;
+  font-size: 18px;
+}
+
+.line-up .lineup-product .content-div .card .header-wrapper .para {
+  font-size: 18px;
+  color: #000000;
+  padding: 5px;
+}
+
+.line-up .lineup-product .content-div .card .header-wrapper .price {
+  font-size: 20px;
+  color: #000000;
+}
+
+.line-up .lineup-product .content-div .card .button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 40px;
+  
+  height: 13vh;
+  padding: 10px;
+}
+
+.line-up .lineup-product .content-div .card .button-wrapper a {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.line-up .lineup-product .content-div .card .button-wrapper .button {
+  background: rgb(53, 137, 255);
+  color: white;
+  width: 7.5rem;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+  font-weight: 400;
+
+  border-radius: 1.5rem;
+}
+
+.line-up .lineup-product .content-div .card .display-length {
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin: 15px auto;
+  flex-direction: column;
+}
+
+.line-up
+  .lineup-product
+  .content-div
+  .card
+  .display-length
+  .display-length-header {
+  font-size: 30px;
+  color: #000000;
+  font-weight: 600;
+  font-size-adjust: unset;
+}
+.line-up .lineup-product .content-div .card .para-wrapper {
+  text-align: center;
+}
+
+.line-up .lineup-product .content-div .card .para-wrapper .display-specs {
+  font-size: 15px;
+  color: #000000;
+}
+
+.line-up .lineup-product .content-div .card .processor-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-up .lineup-product .content-div .card hr {
+  color: #ddd;
+  background-color: #ddd;
+  height: 1px;
+  border: none;
+  max-width: 100%;
+}
+
+.line-up .lineup-product .content-div .card .processor-div .chip-images {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.line-up .lineup-product .content-div .card .processor-div .chip-images img {
+  max-height: 5vw;
+
+  max-width: 11vw;
+}
+
+.line-up .lineup-product .content-div .card .processor-div .para-wrapper {
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.line-up .lineup-product .content-div .card .processor-div .para-wrapper .para {
+  margin: auto;
+  padding: 10px;
+  font-size: 14px;
+  color: #060606;
+}
+
+.line-up .lineup-product .content-div .card .processor-div .battery-extends {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  
+}
+
+.line-up
+  .lineup-product
+  .content-div
+  .card
+  .processor-div
+  .battery-extends
+  .mini-header {
+  margin: 5px;
+  text-align: center;
+  color: #000000;
+  font-size: 14px;
+}
+
+.line-up
+  .lineup-product
+  .content-div
+  .card
+  .processor-div
+  .battery-extends
+  .main-header {
+  text-align: center;
+
+  font-size: 30px;
+  color: #000000;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .counter-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        margin: auto;
+        padding: 30px;
+        width: 80%;
+      }
+      .counter {
+        width: 50%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+      }
+
+      #count {
+        font-size: 150px;
+        color: aquamarine;
+      }
+      .btn-wrapper {
+        width: 50%;
+        display: flex;
+        background-color: black;
+        align-items: center;
+        height: 20vh;
+        justify-content: center;
+        margin: auto;
+      }
+      .btn-wrapper button {
+        width: 120px;
+        margin: 20px;
+        padding: 10px;
+        font-size: 19px;
+        border-radius: 1rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+        background-color: aquamarine;
+      }
+
+      .btn-wrapper button:hover {
+        box-shadow: 1px 1px 5px rgb(169, 169, 169);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="counter-wrapper">
+      <div class="counter">
+        <h1 id="count"></h1>
+      </div>
+      <div class="btn-wrapper">
+        <button onclick="count()">Count</button>
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+
+    <script>
+      let x = 1;
+      function count() {
+        document.getElementById("count").innerHTML = x++;
+      }
+
+      function reset() {
+        document.getElementById("count").innerHTML = x = 1;
+      }
+    </script>
+  </body>
+</html>

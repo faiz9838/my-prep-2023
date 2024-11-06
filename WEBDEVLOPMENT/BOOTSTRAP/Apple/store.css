@@ -1,0 +1,1881 @@
+* {
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+}
+html,
+body {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: #e5e7eb;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  padding-right:0 !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  
+}
+*:focus {
+  outline: none;
+}
+:root {
+  --code-color: darkred;
+  --code-bg-color: #aaaaaa;
+  --code-font-size: 0px;
+  --code-line-height: 4;
+  --scroll-bar-color: #c5c5c5;
+  --scroll-bar-bg-color: #f6f6f6;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  scrollbar-width: 0;
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-bg-color);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scroll-bar-bg-color);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 20px;
+  border: 3px solid var(--scroll-bar-bg-color);
+}
+
+
+.navbar {
+  color: white;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  background-color: rgba(0, 0, 0, 0.951);
+
+}
+
+
+.navbar .collapse .navbar-nav {
+  gap: 29px;
+}
+
+.navbar-brand {
+  color: white;
+  margin-left: 50px;
+}
+
+.navbar-brand:hover {
+  color: rgb(177, 177, 177);
+}
+
+.navbar .collapse .navbar-nav .nav-item a {
+  color: rgb(255, 255, 255);
+  font-size: 13px;
+  font-weight: 500;
+}
+/*
+.navbar .collapse .navbar-nav .nav-item a:hover {
+  color: white;
+}  */
+
+.navbar .collapse .navbar-nav .nav-item .nav-link .bi-search {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.dropdown-content {
+  background: rgb(0, 0, 0);
+  height: 10vh;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.6px);
+  -webkit-backdrop-filter: blur(1.6px);
+  z-index: 9999;
+  display: none;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  min-height: 65vh;
+  overflow-y: auto;
+  padding: 10px;
+  z-index: -1;
+  transition: all 4s ease-in;
+}
+
+li > * {
+  text-decoration: none;
+}
+
+/* Dropdown content  */
+
+.dropdown-content .list-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 50px;
+  height: 100%;
+}
+
+.dropdown-content .list-wrapper .shop {
+  height: 100%;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content .list-wrapper .shop ul .mini-header {
+  color: grey;
+  font-weight: 400;
+  font-size: 13px;
+}
+.dropdown-content .list-wrapper .shop ul li {
+  display: flex;
+  text-align: start;
+  text-decoration: none;
+  flex-direction: column;
+}
+
+.dropdown-content .list-wrapper .shop ul a li {
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  font-weight: 600;
+}
+
+.dropdown-content .list-wrapper .shop ul a:hover {
+  text-decoration: none;
+}
+
+.dropdown-content .list-wrapper .quick-link {
+  height: 100%;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content .list-wrapper .quick-link .mini-header {
+  color: grey;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.dropdown-content .list-wrapper .quick-link ul a li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 12px;
+}
+
+.dropdown-content .list-wrapper .quick-link ul a:hover {
+  text-decoration: none;
+}
+
+.dropdown-content .list-wrapper .special-stores {
+  height: 100%;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.dropdown-content .list-wrapper .special-stores .mini-header {
+  color: grey;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.dropdown-content .list-wrapper .special-stores ul a li {
+  list-style: none;
+}
+
+.dropdown-content .list-wrapper .special-stores ul a:hover {
+  text-decoration: none;
+}
+
+.navbar-nav li:hover > .dropdown-content {
+  color: white;
+  display: block;
+  transition: display 15s, color 10s cubic-bezier(0.4, 0, 0.2, 5),
+    margin-top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 10px;
+  position: absolute;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 0;
+  /* Add other necessary styles for your dropdown content */
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 5px;
+
+  width: 5vw;
+}
+.container-1 {
+  display: flex;
+  margin-top: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  height: 13vh;
+}
+
+.container-1 .content {
+  text-align: center;
+  padding: 5px;
+}
+
+.container-1 .content .para {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: black;
+}
+
+.container-1 .content .para span {
+  margin: 5px;
+}
+
+.container-two {
+  margin-top: 0px;
+  background: rgb(249, 249, 249);
+  height: auto;
+}
+.container-two .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.container-two .container .header {
+  padding: 50px;
+}
+
+.container-two .container .header .heading {
+  color: gray;
+  font-size: 3rem;
+}
+.container-two .container .header .heading span {
+  color: black;
+}
+
+.container-two .container .services {
+  height: 100%;
+}
+
+.container-two .container .services .specialist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.container-two .container .services .specialist img {
+  width: 2.4rem;
+  margin: 10px;
+}
+
+.container-two .container .services .specialist .content {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+}
+.container-two .container .services .specialist .content .header-specialist {
+  margin: 0;
+  padding: 0;
+}
+
+/* .container-two .container .services .specialist .content .specialist-link {
+
+} */
+
+.container-two .container .services .store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.container-two .container .services .store img {
+  width: 2.4rem;
+  margin: 10px;
+  height: 2.4rem;
+  border-radius: 3rem;
+}
+
+.container-two .container .services .store .content {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+}
+.container-two .container .services .store .content .header-specialist {
+  margin: 0;
+  padding: 0;
+}
+
+.container-two .card-row {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.container-two .card-row .card-wrapper {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+  padding-left: 100px;
+  overflow-x: scroll;
+}
+.card-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.card-wrapper {
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container-two .card-row .card-wrapper .card {
+  margin: 0px;
+  display: flex;
+  min-width: 10rem;
+  background: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container-two .card-row .card-wrapper .card img {
+  width: 7.5rem;
+}
+.container-two .card-row .card-wrapper .card a {
+  padding: 10px;
+  color: black;
+  font-weight: 500;
+}
+
+.container-two .latest-row {
+  overflow: hidden;
+
+  width: 100%;
+  margin: auto;
+}
+.container-two .latest-row .heading {
+  margin-top: 20px;
+  margin-left: 110px;
+  padding: 10px;
+}
+
+.container-two .latest-row .heading h3 {
+  font-size: 30px;
+  color: #878787;
+}
+
+.container-two .latest-row .heading span {
+  color: black;
+}
+
+.container-two .latest-row .card-wrapper {
+  overflow-x: scroll;
+  height: auto;
+
+  display: flex;
+
+  flex-direction: row;
+  padding-left: 100px;
+}
+
+.container-two .latest-row .card-wrapper .card {
+  box-shadow: 2px 2px 10px rgb(235, 235, 235);
+  border: none;
+}
+
+.container-two .latest-row .card-wrapper #card-1 {
+  min-width: 25rem;
+  height: 32rem;
+  margin: 15px;
+  background-color: rgb(0, 0, 0);
+  background-image: url("15pro/titanium.png");
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: 45% 150px;
+}
+
+.container-two .latest-row .card-wrapper .card .content {
+  margin: 15px;
+  padding: 15px;
+}
+
+.container-two .latest-row .card-wrapper #card-1 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(236, 236, 236);
+}
+
+.container-two .latest-row .card-wrapper #card-1 .content .header {
+  color: white;
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-1 .content .price {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-two .latest-row .card-wrapper #card-2 {
+  background-color: white;
+  background-image: url("second-main/Store-card/store-card-40-iphone-15-202309.jpeg");
+  border-radius: 1rem;
+  min-width: 25rem;
+  height: 32rem;
+  margin: 15px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 12px;
+}
+.container-two .latest-row .card-wrapper #card-2 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(130, 130, 130);
+}
+
+.container-two .latest-row .card-wrapper #card-2 .content .header {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-2 .content .price {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-two .latest-row .card-wrapper #card-3 {
+  min-width: 25rem;
+  height: 32rem;
+  margin: 15px;
+  background-color: white;
+  background-image: url("second-main/Store-card/store-card-40-macbook-pro-202310.jpeg");
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 10px;
+}
+.container-two .latest-row .card-wrapper #card-3 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(130, 130, 130);
+}
+
+.container-two .latest-row .card-wrapper #card-3 .content .header {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-3 .content .price {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-two .latest-row .card-wrapper #card-4 {
+  min-width: 25rem;
+  height: 32rem;
+  border-radius: 1rem;
+  margin: 15px;
+  background-color: rgb(0, 0, 0);
+  background-image: url("second-main/Store-card/store-card-40-bhm-202401\ \(1\).jpeg");
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 15px;
+}
+
+.container-two .latest-row .card-wrapper #card-4 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(236, 236, 236);
+}
+
+.container-two .latest-row .card-wrapper #card-4 .content .header {
+  color: white;
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-4 .content .price {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container-two .latest-row .card-wrapper #card-5 {
+  min-width: 25rem;
+  height: 32rem;
+  border-radius: 1rem;
+  margin: 15px;
+  background-color: rgb(0, 0, 0);
+  background-image: url("second-main/Store-card/store-card-40-watch-s9-202309_GEO_IN.jpeg");
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 15px;
+}
+
+.container-two .latest-row .card-wrapper #card-5 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(236, 236, 236);
+}
+
+.container-two .latest-row .card-wrapper #card-5 .content .header {
+  color: white;
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-5 .content .price {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container-two .latest-row .card-wrapper .card:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 15px rgb(211, 211, 211);
+}
+
+.container-two .latest-row .card-wrapper .card img {
+  width: 25rem;
+  height: 32rem;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+.container-two .latest-row .card-wrapper #card-6 {
+  background-color: white;
+  background-image: url("second-main/Store-card/store-card-40-veteran-202309.jpeg");
+  border-radius: 1rem;
+  min-width: 25rem;
+  height: 32rem;
+  margin: 15px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 0px;
+}
+.container-two .latest-row .card-wrapper #card-6 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(130, 130, 130);
+}
+
+.container-two .latest-row .card-wrapper #card-6 .content .header {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-6 .content .price {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-two .latest-row .card-wrapper #card-7 {
+  background-color: white;
+  background-image: url("second-main/Store-card/store-card-40-ipad-202310_GEO_IN.jpeg");
+  border-radius: 1rem;
+  min-width: 25rem;
+  height: 32rem;
+  margin: 15px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 12px;
+}
+.container-two .latest-row .card-wrapper #card-7 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(130, 130, 130);
+}
+
+.container-two .latest-row .card-wrapper #card-7 .content .header {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-7 .content .price {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-two .latest-row .card-wrapper #card-8 {
+  background-color: rgb(247, 247, 247);
+  background-image: url("second-main/Store-card/store-card-40-watch-ultra-202309_GEO_IN.jpeg");
+  border-radius: 1rem;
+  min-width: 25rem;
+  height: 32rem;
+  margin: 15px;
+
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: 45% 0px;
+}
+.container-two .latest-row .card-wrapper #card-8 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(130, 130, 130);
+}
+
+.container-two .latest-row .card-wrapper #card-8 .content .header {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-8 .content .price {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-two .latest-row .card-wrapper #card-9 {
+  background-color: white;
+  background-image: url("second-main/Store-card/store-card-40-macbook-air-202306.jpeg");
+  border-radius: 1rem;
+  min-width: 25rem;
+  height: 32rem;
+  margin: 15px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 12px;
+}
+.container-two .latest-row .card-wrapper #card-9 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(130, 130, 130);
+}
+
+.container-two .latest-row .card-wrapper #card-9 .content .header {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-9 .content .price {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-two .latest-row .card-wrapper #card-10 {
+  min-width: 25rem;
+  height: 32rem;
+  margin: 15px;
+  background-color: rgb(0, 0, 0);
+  background-image: url("second-main/Store-card/store-card-40-ipad-air-202203.jpeg");
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 0px;
+}
+
+.container-two .latest-row .card-wrapper #card-10 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(236, 236, 236);
+}
+
+.container-two .latest-row .card-wrapper #card-10 .content .header {
+  color: white;
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-10 .content .price {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.container-two .latest-row .card-wrapper #card-11 {
+  background-color: white;
+  background-image: url("second-main/Store-card/store-card-40-watch-se-202401.jpeg");
+  border-radius: 1rem;
+  min-width: 25rem;
+  height: 32rem;
+  margin: 15px;
+
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 45% 12px;
+}
+.container-two .latest-row .card-wrapper #card-11 .content .product_name {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgb(130, 130, 130);
+}
+
+.container-two .latest-row .card-wrapper #card-11 .content .header {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+}
+
+.container-two .latest-row .card-wrapper #card-11 .content .price {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Accessories section */
+
+.container-two .accessories-row {
+  overflow: hidden;
+
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+.container-two .accessories-row .heading {
+  margin-top: 50px;
+  margin-left: 110px;
+  padding: 10px;
+}
+
+.container-two .accessories-row .heading span {
+  color: rgb(239, 0, 0);
+}
+
+.container-two .accessories-row .heading .header {
+  color: #717171;
+  font-size: 30px;
+}
+.container-two .accessories-row .card-wrapper {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  z-index: 2;
+
+  padding-left: 90px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.container-two .accessories-row .card-wrapper .card {
+  margin-left: 25px;
+  text-decoration: none;
+  box-shadow: 2px 2px 10px rgb(235, 235, 235);
+  border: none;
+  margin-top: 15px;
+  border-radius: 1rem;
+  min-width: 21rem;
+  height: 32rem;
+  background-color: white;
+}
+
+.container-two .accessories-row .card-wrapper #card-1 {
+  min-width: 26rem;
+  background-image: url("second-main/Accessories/store-card-40-valentines-day-202401.jpeg");
+  background-size: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  text-decoration: none;
+}
+
+.container-two .accessories-row .card-wrapper .card .image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20rem;
+  text-decoration: none;
+}
+
+.container-two .accessories-row .card-wrapper .card .image-wrapper img {
+  width: 15rem;
+  margin: 0px auto;
+  aspect-ratio: 4/4;
+  object-fit: cover;
+}
+
+.container-two .accessories-row .card-wrapper #card-1 .content-wrapper {
+  padding: 25px;
+}
+
+.container-two
+  .accessories-row
+  .card-wrapper
+  #card-1
+  .content-wrapper
+  .small-header {
+  color: gray;
+  padding: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container-two
+  .accessories-row
+  .card-wrapper
+  #card-1
+  .content-wrapper
+  .main-header {
+  font-size: 30px;
+  padding: 3px;
+  color: black;
+}
+.container-two .accessories-row .card-wrapper a {
+  text-decoration: none;
+  color: black;
+}
+
+/* COLOR PLATTE */
+.container-two .accessories-row .card-wrapper .color-platte {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-two .accessories-row .card-wrapper .color-platte span {
+  width: 1.1vw;
+  box-shadow: 1px 1px 5px rgba(215, 215, 215, 0.529);
+  height: 2.3vh;
+  margin: 5px;
+  border-radius: 1rem;
+}
+
+.container-two .accessories-row .card .content-wrapper {
+  padding: 30px;
+}
+
+.container-two .accessories-row .card .content-wrapper .new {
+  margin: 3px auto;
+  padding: 0;
+  color: rgb(207, 135, 2);
+  font-size: 13px;
+}
+
+.container-two .accessories-row .card .content-wrappe .header {
+  font-size: 25px;
+  color: black;
+}
+
+.container-two .accessories-row .card .content-wrapper .price {
+  font-size: 14px;
+  margin: 20px auto;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.container-two .accessories-row .card-wrapper .card:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 15px rgb(211, 211, 211);
+}
+
+.container-two .store-difference {
+  height: auto;
+  margin: 20px auto;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  overflow-x: hidden;
+}
+
+.container-two .store-difference .heading {
+  width: 100%;
+
+  padding-left: 100px;
+}
+
+.container-two .store-difference .heading .header {
+  margin-top: 50px;
+  margin-left: 5px;
+  color: gray;
+}
+
+.container-two .store-difference .heading .header span {
+  color: rgb(0, 0, 0);
+}
+
+.container-two .store-difference .card-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+ 
+  padding-top: 15px;
+  flex-direction: row;
+  z-index: 2;
+  padding-left: 85px;
+  overflow-x: scroll;
+  padding-bottom: 15px;
+}
+
+.container-two .store-difference .card-wrapper .logo {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.container-two .store-difference .card-wrapper  .logo .bi {
+  font-size: 42px;
+}
+
+.container-two .store-difference .card-wrapper  .card {
+  min-width: 20rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 10px rgb(233, 233, 233);
+  border: none;
+  padding: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+.container-two
+  .store-difference
+  .card-wrapper
+  .card
+  .content-wrapper
+  .content-header {
+  color: black;
+  font-size: 25px;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.container-two .store-difference .card-wrapper  .card .content-wrapper span {
+  color: rgb(42, 113, 255);
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.container-two .store-difference .card-wrapper  .card .content-wrapper #span-1 {
+  color: rgb(174, 58, 241);
+
+  width: 100%;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.container-two .store-difference .card-wrapper  .card .content-wrapper #span-2 {
+  color: #04ef04;
+
+  width: 100%;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Modal styles */
+/* Modal styling */
+
+.modal{
+  border: none;
+  
+}
+body.modal-open {
+  overflow: auto;
+  padding-right:0 !important;
+  border: none;
+}
+
+.modal-content{
+  border: none;
+  box-shadow: 1px 1px 5px rgba(181, 181, 181, 0.818);
+  border-radius: 1rem;
+  z-index: 1098;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-body {
+ 
+  border: none;
+  z-index: 1099;
+}
+
+
+
+/* Adjust modal size if needed */
+.modal-dialog {
+  max-width: 70%;
+  border: none;
+}
+
+/* Close button in modal */
+
+/* Modal - 2 */
+.modal .modal-dialog .modal-content .modal-header .close{
+  color: #000000;
+  font-size: 35px;
+  font-weight: 600;
+  position: absolute;
+  float: left;
+  outline: none;
+  border: none;
+}
+
+.modal .modal-dialog .modal-content .modal-header .close:hover{
+  
+  color: #000000;
+  font-size: 37px;
+  font-weight: 600;
+}
+
+
+#modal2 .modal-body{
+ 
+  margin: 25px auto;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+}
+
+#modal2 .modal-body .header{
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+#modal2 .modal-body .para{
+  font-size: 18px;
+ margin: 10px auto;
+}
+
+#modal2 .modal-body a{
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+
+#modal3 .modal-body{
+ 
+  margin: 25px auto;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+#modal3 .modal-body .header{
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+#modal3 .modal-body .para{
+  font-size: 18px;
+ margin: 10px auto;
+}
+
+#modal3 .modal-body a{
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+#modal4 .modal-body{
+ 
+  margin: 25px auto;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+#modal4 .modal-body .header{
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+#modal4 .modal-body .para{
+  font-size: 18px;
+ margin: 10px auto;
+}
+
+#modal4 .modal-body a{
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+#modal5 .modal-body{
+ 
+  margin: 25px auto;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+#modal5 .modal-body .header{
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+}
+
+#modal5 .modal-body .sub-header{
+  margin-top: 15px ;
+  color: black;
+}
+
+#modal5 .modal-body .para{
+  font-size: 18px;
+ margin: 10px auto;
+}
+
+#modal6 .modal-body{
+ 
+  margin: 25px auto;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+#modal6 .modal-body .header{
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+#modal6 .modal-body .para{
+  font-size: 18px;
+ margin: 10px auto;
+}
+
+#modal6 .modal-body a{
+  font-size: 18px;
+  margin: 10px auto;
+}
+
+
+
+
+footer {
+  position: relative;
+  bottom: 0;
+  width:100%;
+  background-color: #e5e7eb;
+  width:100%;
+ 
+}
+
+footer .nav {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 30px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+footer .nav .index {
+  padding: 5px;
+}
+
+footer .nav .index a {
+  color: black;
+}
+
+footer .nav .index span {
+  font-size: 14px;
+}
+
+footer .link-wrapper {
+  width: 80%;
+
+  display: flex;
+  flex-direction: row;
+  height: 65vh;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .link-wrapper div {
+  align-items: center;
+
+  width: 200px;
+  height: 100%;
+
+  padding: 5px;
+}
+
+footer .link-wrapper div ul h4 {
+  font-size: 14px;
+  color: black;
+}
+
+footer .link-wrapper div ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+footer .link-wrapper div ul li a {
+  color: rgb(70, 70, 70);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+footer .contact {
+  width: 80%;
+  padding: 10px;
+}
+
+footer .contact .contact-text {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #838383;
+}
+
+.copyright-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 0;
+}
+
+.copyright-wrapper .copyright {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright-wrapper .copyright .para {
+  font-size: 12px;
+  margin: auto;
+  color: #838383;
+}
+
+.copyright-wrapper .privacy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-width: 73%;
+  align-items: start;
+  margin: auto;
+  padding: 2px;
+}
+
+.copyright-wrapper .privacy .privacy-link {
+  font-size: 12px;
+  margin: 8px;
+  padding-left: 5px;
+  color: #838383;
+}
+
+.copyright-wrapper .privacy .reigon {
+  width: 10%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  color: #838383;
+}
+
+.copyright-wrapper .privacy .reigon a {
+  font-size: 12px;
+  margin: auto;
+  padding: 5px;
+}
+
+
+/* Loud speaker */
+
+.container-two .loud-speaker {
+  overflow: hidden;
+
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+.container-two .loud-speaker .heading {
+  margin-top: 50px;
+  margin-left: 110px;
+  padding: 10px;
+}
+
+.container-two .loud-speaker .heading span {
+  color: rgb(0, 0, 0);
+}
+
+.container-two .loud-speaker .heading .header {
+  color: #717171;
+  font-size: 30px;
+}
+.container-two .loud-speaker .card-wrapper {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  z-index: 2;
+
+  padding-left: 90px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.container-two .loud-speaker .card-wrapper .card {
+  margin-left: 25px;
+  text-decoration: none;
+  box-shadow: 2px 2px 10px rgb(235, 235, 235);
+  border: none;
+  margin-top: 15px;
+  border-radius: 1rem;
+  min-width: 21rem;
+  height: 32rem;
+  background-color: white;
+}
+
+.container-two .loud-speaker .card-wrapper #card-1 {
+  min-width: 26rem;
+  background-image: url("second-main/loudspeaker/store-card-40-applemusic-202301.jpg");
+  background-size: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  text-decoration: none;
+}
+
+.container-two .loud-speaker .card-wrapper .card .image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 20rem;
+  text-decoration: none;
+}
+
+.container-two .loud-speaker .card-wrapper .card .image-wrapper img {
+  width: 15rem;
+  margin: 0px auto;
+  aspect-ratio: 4/4;
+  object-fit: cover;
+}
+
+.container-two .loud-speaker .card-wrapper #card-1 .content-wrapper {
+  padding: 25px;
+}
+
+.container-two
+  .loud-speaker
+  .card-wrapper
+  #card-1
+  .content-wrapper
+  .small-header {
+  color: rgb(15, 15, 15);
+  padding: 5px;
+  font-size: 18px;
+  text-decoration: none;
+  list-style: none;
+  font-weight: 400;
+}
+
+.container-two
+  .loud-speaker
+  .card-wrapper
+  #card-1
+  .content-wrapper
+  .main-header {
+  font-size: 26px;
+  padding: 3px;
+  color: black;
+}
+.container-two .loud-speaker .card-wrapper a {
+  text-decoration: none;
+  color: black;
+}
+
+/* COLOR PLATTE */
+.container-two .loud-speaker .card-wrapper .color-platte {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-two .loud-speaker .card-wrapper .color-platte span {
+  width: 1.1vw;
+  box-shadow: 1px 1px 5px rgba(215, 215, 215, 0.529);
+  height: 2.3vh;
+  margin: 5px;
+  border-radius: 1rem;
+}
+
+.container-two .loud-speaker .card .content-wrapper {
+  padding: 30px;
+}
+
+.container-two .loud-speaker .card .content-wrapper .new {
+  margin: 3px auto;
+  padding: 0;
+  color: rgb(207, 135, 2);
+  font-size: 13px;
+}
+
+.container-two .loud-speaker .card .content-wrapper .header {
+  font-size: 18px;
+  color: black;
+}
+
+.container-two .loud-speaker .card .content-wrapper .price {
+  font-size: 14px;
+  margin: 20px auto;
+  text-align: justify;
+  font-weight: 500;
+}
+
+.container-two .loud-speaker .card-wrapper .card:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 15px rgb(211, 211, 211);
+}
+
+.container-two .experience{
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.container-two .experience .heading {
+  margin-top: 50px;
+  margin-left: 110px;
+  padding: 10px;
+}
+
+.container-two .experience .heading span {
+  color: rgb(0, 0, 0);
+}
+
+.container-two .experience .heading .header {
+  color: #717171;
+  font-size: 30px;
+}
+
+.container-two .experience .card-wrapper {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  z-index: 2;
+ 
+  padding-left: 90px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.container-two .experience .card-wrapper .card{
+  margin-left: 30px;
+  text-decoration: none;
+  box-shadow: 2px 2px 10px rgb(235, 235, 235);
+  border: none;
+  margin-top: 15px;
+  border-radius: 1rem;
+  position: relative;
+  min-width: 28rem;
+  border-radius: 1rem;
+ 
+  height: 29rem;
+  background-color: white;
+}
+
+.container-two .experience .card-wrapper a{
+  text-decoration: none;
+}
+
+.container-two .experience .card-wrapper .card .content-wrapper{
+ 
+  padding: 25px;
+  position: absolute;
+  width: 100%;
+  top: 1%;
+}
+
+.container-two .experience .card-wrapper .card .content-wrapper .mini-header{
+  font-size: 14px;
+  outline: none;
+  text-decoration: double;
+  color: white;
+}
+
+.container-two .experience .card-wrapper .card .content-wrapper .text-header{
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.container-two .experience #card-1{
+  background-image: url("second-main/experience/store-card-50-tv-services-202303.jpg");
+
+  background-repeat: none;
+  background-position: center;
+
+  background-size: 100%;
+
+}
+
+.container-two .experience #card-2{
+  background-image: url("second-main/experience/store-card-50-subscriptions-202108.jpg");
+
+  background-repeat: none;
+  background-position: center;
+
+  background-size: 100%;
+
+}
+
+.container-two .experience #card-2 .content-wrapper .text-header{
+  color: #000000;
+}
+
+.container-two .experience #card-3{
+  background-image: url("second-main/experience/store-card-50-applecare-202309.jpg");
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-repeat: none;
+}
+
+.container-two .experience #card-3 .content-wrapper .mini-header{
+  color: #000000;
+  font-size: 25px;
+}
+
+.container-two .experience #card-3 .content-wrapper .text-header{
+  color: #000000;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+
+.container-two .experience #card-4{
+  background-image: url("second-main/experience/store-card-50-homekit-202309_GEO_IN.jpg");
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-repeat: none;
+}
+
+.container-two .experience #card-4 .content-wrapper .mini-header{
+  color: #666666;
+  
+}
+
+.container-two .experience #card-4 .content-wrapper .text-header{
+  color: #000000;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+
+.container-two .experience .card-wrapper .card:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 15px rgb(211, 211, 211);
+}
+
+
+/* special-stores */
+.container-two .special-stores{
+  overflow: hidden;
+  width: 100%;
+
+}
+
+.container-two .special-stores .heading {
+  margin-top: 50px;
+  margin-left: 90px;
+  padding: 10px;
+}
+
+.container-two .special-stores .heading span {
+  color: rgb(0, 0, 0);
+}
+
+.container-two .special-stores .heading .header {
+  color: #717171;
+  font-size: 30px;
+}
+
+.container-two .special-stores .card-wrapper {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  z-index: 2;
+ 
+  padding-left: 85px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.container-two .special-stores .card-wrapper .card{
+  margin-left: 22px;
+  text-decoration: none;
+  box-shadow: 2px 2px 10px rgb(235, 235, 235);
+  border: none;
+  margin-top: 15px;
+  border-radius: 1rem;
+  position: relative;
+  width: 25rem;
+  border-radius: 1rem;
+ 
+  height: 32rem;
+  background-color: white;
+}
+
+.container-two .special-stores .card-wrapper a{
+  text-decoration: none;
+  
+}
+
+.container-two .special-stores .card-wrapper .card .content-wrapper{
+ 
+  padding: 25px;
+  position: absolute;
+  width: 100%;
+  top: 1%;
+}
+
+.container-two .special-stores .card-wrapper .card .content-wrapper .mini-header{
+  font-size: 14px;
+  outline: none;
+  text-decoration: double;
+  color: rgb(102, 102, 102);
+}
+
+.container-two .special-stores .card-wrapper a .card .content-wrapper .text-header{
+  color: rgb(0, 0, 0);
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.container-two .special-stores #card-1{
+  background-image: url("second-main/special-stores/ipad-card-40-education-202108_GEO_IN.jpg");
+  background-position: 50% 50%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+}
+
+.container-two .special-stores .card-wrapper .card:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 15px rgb(211, 211, 211);
+}
+
+
+#modal7 .modal-body{
+ 
+  margin: 25px auto;
+  padding-left: 80px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#modal7 .modal-body .header{
+  color: black;
+}
+
+
+.video-modal {
+  position: relative;
+  height: 70vh;
+  overflow: none;
+  width: 60vw;
+  margin-left: -22px;
+ 
+}
+
+.video-modal video {
+  object-fit: cover;
+  width: 130vh;
+  margin: auto;
+  border-radius: 1rem;
+  height: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Quick links */
+
+.container-two .quick-links {
+  width: 100%;
+  min-height: auto;
+  display: flex;
+ 
+  flex-direction: row;
+  z-index: 2;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 100px;
+  margin-left: 60px;
+  padding: 40px;
+}
+
+.container-two .quick-links .link {
+ margin-top: 15px;
+ 
+}
+
+.container-two .quick-links .link a{
+  margin: 15px;
+  margin-left: 0;
+  color: #131313;
+  font-size: 13px;
+ border: 2px solid #19191962;
+  padding:10px;
+  border-radius: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+
+}
+
+.container-two .quick-links .link a:hover{
+  transition: 900ms ease-in-out ;
+  color: white;
+  background-color: #000000;
+}
+
+.container-two .quick-links hr {
+  min-width: 190vh;
+ margin: 30px auto;
+}
+
+
+<div class="row store-difference">
+<div class="heading">
+  <h3 class="header"><span>The Apple Store difference.</span> Even more reasons to shop with us.</h3>
+</div>
+<div class="card-wrapper">
+
+<div class="card" id="card">
+  <div class="content-wrapper">
+    <h2 class="content-header">
+      <span>Exchange your smartphone,</span> get 15000.00 - <br />
+      62300.00 in credit towards a new one.
+    </h2>
+  </div>
+</div>
+
+<div class="modal modal-dialog-centered modal-dialog-scrollable" id="modal">
+  <div class="modal-content">
+  <div class="button-section col-auto">
+    <button onclick="closeModal()"><i class="bi bi-x-lg"></i></button>
+  </div>
+   <h1 class="header">Get instant trade-in credit for your new device.</h1>
+   <p class="para">With Apple Trade In, you get instant credit towards a new iPhone when you exchange an eligible smartphone.<br>
+
+    Shop online and choose to deliver your new iPhone to complete your trade-in right on your doorstep. Or order online and pick up at an Apple Store to complete your trade-in when you collect your new iPhone.<br>
+    
+    You can also buy at an Apple store and exchange your eligible smartphone for instant credit towards your new iPhone.</p>
+  </div>
+</div>
+
+
+<div class="card" id="card">
+  <div class="logo">
+    <i class="bi bi-apple" style="background: #FFB76B;
+    background: linear-gradient(to right, #FFB76B 0%, #FFA73D 30%, #FF7C00 60%, #FF7F04 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    "></i>
+  </div>
+  <div class="content-wrapper">
+    <h2 class="content-header" style="background: #00FF00;
+    background: linear-gradient(to left, #00FF00 0%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    ">Customise your Mac</h2>
+  </div>
+</div>
+<div class="modal  modal-dialog-centered modal-dialog-scrollable" id="modal">
+  <div class="modal-content">
+  <div class="button-section col-auto">
+    <button onclick="closeModal()"><i class="bi bi-x-lg"></i></button>
+  </div>
+   <h1 class="header">Get instant trade-in credit for your new device.</h1>
+   <p class="para">With Apple Trade In, you get instant credit towards a new iPhone when you exchange an eligible smartphone.<br>
+
+    Shop online and choose to deliver your new iPhone to complete your trade-in right on your doorstep. Or order online and pick up at an Apple Store to complete your trade-in when you collect your new iPhone.<br>
+    
+    You can also buy at an Apple store and exchange your eligible smartphone for instant credit towards your new iPhone.</p>
+  </div>
+</div>
+<div class="card">
+  <div class="logo">
+    <i class="bi bi-emoji-smile" style=" color: rgb(174, 58, 241);"></i>
+  </div>
+  <div class="content-wrapper">
+    <h2 class="content-header">Make them yours.</h2>
+    <h2 id="span-1">Engrave a mix of emoji, names and numbers for free.</h2>
+  </div>
+</div>
+<div class="card">
+  <div class="logo">
+    <i class="bi bi-credit-card" style="color: #04ef04;"></i>
+  </div>
+  <div class="content-wrapper">
+    <h2 id="span-2">Flexible to pay.</h2>
+    <h2 class="content-header">Plus instant savings and No cost EMI.</h2>
+  </div>
+</div>
+<div class="card">
+  <div class="logo">
+    <i class="bi bi-truck" style="color: #04ef04;"></i>
+  </div>
+  <div class="content-wrapper">
+    <h2 class="content-header"><span id="span-2">Enjoy free delivery, or easy pickup</span> from an Apple Store.</h2>
+  </div>
+</div>
+<div class="card">
+  <div class="logo">
+    <i class="bi bi-arrow-repeat" style="color: rgb(0, 38, 255);"></i>
+  </div>
+  <div class="content-wrapper">
+    <h2 class="content-header"><span>Trade in your eligible Mac, Apple Watch or iPad for instant credit.</span>In-store only.</h2>
+  </div>
+</div>
+</div>
+</div

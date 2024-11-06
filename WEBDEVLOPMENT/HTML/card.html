@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        gap: 10px;
+        border: 2px solid red;
+      }
+
+      .child {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 5.54rem;
+        height: 70vh;
+        border: 2px solid green;
+        transition: all 1.4s ease-in-out;
+        border-radius: 1rem;
+
+        flex-direction: row;
+        background-image: url("../BOOTSTRAP/flipkart/Banners/11c715258a227a50.webp");
+      }
+      .child img {
+        width: 15vw;
+        object-fit: cover;
+      }
+
+      .child:hover {
+        display: flex;
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <img src="2024-04-13-12-55-33.png" alt="" />
+    </div>
+  </body>
+</html>

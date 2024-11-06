@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border: 2px solid red;
+        height: 90vh;
+      }
+
+      button {
+        padding: 8px;
+        width: 120px;
+        outline: none;
+        border: none;
+        border-radius: 1rem;
+        background-color: blue;
+        color: white;
+        box-shadow: 1px 1px 3px grey;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="div">
+      <button onclick="dark()">Change theme</button>
+    </div>
+
+    <script>
+      function dark() {
+        document.getElementById("div").style.background = "black";
+      }
+
+      function white() {
+        document.getElementById("div").style.background = "white";
+      }
+    </script>
+  </body>
+</html>

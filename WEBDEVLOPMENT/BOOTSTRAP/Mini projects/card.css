@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex: auto;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+}
+.card {
+  background-color: rgb(255, 47, 47);
+  min-width: 22vw;
+  border-radius: 10px;
+  height: 60vh;
+
+  z-index: 1;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.301);
+}
+.card img {
+  width: 9vw;
+  height: 20vh;
+  border-radius: 180px;
+  border: 3px solid white;
+  position: absolute;
+  top: 25%;
+  right: 45%;
+}
+
+.card .content-div {
+  height: 40vh;
+  position: absolute;
+  width: 22vw;
+  bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background-color: white;
+  border-radius: 0px 0px 10px 10px;
+  z-index: -1;
+}
+
+.content-div .name {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 0%;
+  margin: 40px auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1px;
+  color: rgb(41, 41, 41);
+}
+
+.content-div .hobbies {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 12%;
+  margin: 40px auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 2px;
+  font-size: 12px;
+  color: rgb(77, 77, 77);
+}
+
+.content-div .social {
+  /* border: 2px solid red; */
+
+  margin: 47px auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 2px;
+  display: flex;
+  width: 20vw;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 12px;
+  color: rgb(77, 77, 77);
+}
+
+.social a {
+  background-color: white;
+  margin: 10px 10px 0px 10px;
+}
+
+.buttons {
+  /* border: 2px solid red; */
+  position: absolute;
+  top: 50%;
+  margin: 40px auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px;
+}
+
+.buttons button {
+  width: 7vw;
+  padding: 6px;
+  margin: 2px;
+  background-color: rgb(255, 37, 37);
+  border: 0;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: 700;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Double click event</h2>
+    <p ondblclick="myFunction()">Double click this</p>
+    <p id="demo"></p>
+
+    <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML += "My name is Faiz Ahmad";
+      }
+    </script>
+
+    <h2>Onchange event</h2>
+
+    <p>Select list item</p>
+
+    <select name="" id="myselect" onchange="Onchange()">
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Volvo">Volvo</option>
+    </select>
+
+    <p id="demo1"></p>
+
+    <script>
+      function Onchange() {
+        let x = document.getElementById("myselect").value;
+        document.getElementById("demo1").innerHTML = "You selected : " + x;
+      }
+    </script>
+
+    <h2>Click event</h2>
+
+    <button onclick="Onclick()">Click me</button>
+    <p id="demo2">This is click demo</p>
+
+    <script>
+      function Onclick() {
+        document.getElementById("demo2").style.backgroundColor = "red";
+      }
+    </script>
+
+    <h2>Copy event</h2>
+    <input type="text" oncopy="myfunction()" value="Try to copy me" />
+    <p id="demo3"></p>
+
+    <script>
+      function myfunction() {
+        document.getElementById("demo3").innerHTML = "You copied text!";
+      }
+    </script>
+
+    <h1>onmouseover event</h1>
+
+    <h3 onmouseover="OnMouseOver()"></h3>
+    <img
+      src="png-clipart-computer-icons-white-instagram-icon-text-logo-thumbnail.png"
+      alt=""
+      width="50px"
+      onmousedown="small(this)"
+      onmouseover="big(this)"
+    />
+    <script>
+      function big(x) {
+        x.style.width = "100px";
+      }
+
+      function small(x) {
+        x.style.width = "50px";
+      }
+    </script>
+  </body>
+</html>

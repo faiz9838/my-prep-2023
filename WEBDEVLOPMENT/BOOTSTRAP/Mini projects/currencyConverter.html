@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container header-wrapper">
+        <h1 class="header text-center">Currency Converter</h1>
+      </div>
+      <div class="container"></div>
+      <form class="m-5 p-5">
+        <div class="form-group">
+          <label for="from">Dollar</label>
+          <input
+            type="number"
+            class="form-control"
+            name="from"
+            id="from"
+            placeholder="Enter Dollar Amount"
+          />
+        </div>
+        <div class="form-group">
+          <label for="to">Rupees</label>
+          <input
+            type="number"
+            class="form-control"
+            name="to"
+            id="to"
+            placeholder="Enter Rupee Conversion Rate"
+          />
+        </div>
+        <button type="button" class="btn btn-primary" onclick="submit()">
+          Submit
+        </button>
+      </form>
+      <div class="result">
+        <label for="amount">Amount:</label>
+        <p id="amount"></p>
+      </div>
+    </div>
+
+    <script>
+      function submit() {
+        // Get input values
+        const dollar = document.getElementById("from").value;
+        const ruppee = document.getElementById("to").value;
+
+        // Perform calculation
+        const paisa = dollar * ruppee;
+
+        // Display result
+        document.getElementById("amount").innerHTML =
+          "Converted Amount: " + paisa; // Round to 2 decimal places
+      }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+    "dataworkspace.excludedProjects": [
+        "SQL/SQL/SQL.sqlproj"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "faiz",
+            "database": "employee",
+            "username": "faiz"
+        }
+    ],
+    "java.debug.settings.onBuildFailureProceed": true,
+    "cmake.configureOnOpen": false,
+    "maven.view": "hierarchical",
+    "C_Cpp.errorSquiggles": "enabled",
+    "liveServer.settings.port": 5501
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .main-div {
+        width: 100%;
+        height: 100%;
+        border: 2px solid red;
+      }
+
+      .main-div .video-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .main-div .video-wrapper video {
+        width: 60%;
+        height: 100%;
+      }
+
+      .main-div .button-wrapper {
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+      }
+
+      .main-div .button-wrapper button {
+        margin: 10px;
+        padding: 5px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="video-wrapper">
+        <video
+          id="myvideo"
+          autoplay
+          src="./20240110-1216-45.7102155.mp4"
+        ></video>
+      </div>
+      <div class="button-wrapper">
+        <button onclick="playVid()">Play</button>
+        <button onclick="stopVid()">Pause</button>
+        <button onclick="big()">big</button>
+        <button onclick="small()">small</button>
+      </div>
+    </div>
+
+    <script>
+      var videoId = document.getElementById("myvideo");
+
+      function playVid() {
+        videoId.play();
+      }
+
+      function stopVid() {
+        videoId.pause();
+      }
+
+      function big() {
+        videoId.style.width = "90%";
+      }
+
+      function small() {
+        videoId.style.width = "50%";
+      }
+    </script>
+  </body>
+</html>

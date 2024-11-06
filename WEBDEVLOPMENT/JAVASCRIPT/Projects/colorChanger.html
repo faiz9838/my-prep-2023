@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .span-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        border: 2px solid red;
+        height: 100vh;
+      }
+      #grey {
+        color: grey;
+        background-color: grey;
+      }
+
+      #red {
+        color: grey;
+        background-color: rgb(255, 0, 0);
+      }
+      #blue {
+        background-color: blue;
+      }
+
+      #green {
+        background-color: green;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+      span {
+        width: 70px;
+        height: 70px;
+        margin: 20px;
+        padding: 10px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="span-wrapper">
+      <span class="button" id="grey"></span>
+      <span class="button" id="red"></span>
+      <span class="button" id="blue"></span>
+      <span class="button" id="green"></span>
+      <span class="button" id="yellow"></span>
+    </div>
+    <script src="colorChanger.js"></script>
+  </body>
+</html>
